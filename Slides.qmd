@@ -1,0 +1,96 @@
+---
+title: Higgs unitarity constraints
+subtitle: Some subtitle that I still don't know
+format: clean-revealjs
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Fabio Cufino
+    affiliations: TU Dortmund University
+date: last-modified
+jupyter: python3
+---
+
+
+# Introduction
+## Introduction
+### **Content:**
+- Overview of the Higgs boson discovery and its implications for the Standard Model (SM).
+- Discussion on Effective Field Theory (EFT) in Higgs physics.
+- Topics covered: Higgs production and decay, precision electroweak measurements, future of Higgs physics.
+
+##  Simplified Case
+### Abelian Higgs Model
+
+
+- Discuss a U(1) gauge theory with a single gauge field (photon).
+- Lagrangian:
+
+$$
+  L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+$$
+
+where 
+$$
+  F_{\mu\nu} = \partial_\nu A_\mu - \partial_\mu A_\nu
+$$
+
+<!-- <div style="height: 40px;"></div> -->
+
+<div class="fragment">
+
+### Here a fragment
+- Appears after
+
+</div>
+
+## This is an image
+### A good one
+
+<div style="display: flex; width: 80%; height: auto; margin: auto;">
+  <figure style="text-align: center;">
+    <figcaption style="color: gray; font-size: 18px; margin-top: -15px;">[Here the source]</figcaption>
+    <img src="Images/icecube.png" style="max-width: 100%; height: 70%;">
+  </figure>
+</div>
+
+## Columns
+### 3 columns, the one in the center is empty
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<div style="height: 55px;"></div>
+
+<div style="display: flex; width: 80%; height: auto; margin: auto;">
+  <figure style="text-align: center;">
+    <img src="Images/icecube.png" style="max-width: 100%; height: auto;">
+    <figcaption style="color: gray; font-size: 18px; margin-top: -15px;">[Here the source]</figcaption>
+  </figure>
+</div>
+
+<div style="font-size: smaller;">
+Here a text that is smaller
+</div>
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+
+**Bold text**:
+
+::: {.incremental}
+- first
+- second
+- third
+:::
+:::
+
+::::
+## Complex Number Plot
+### Last slide

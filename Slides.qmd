@@ -20,77 +20,470 @@ jupyter: python3
 - Discussion on Effective Field Theory (EFT) in Higgs physics.
 - Topics covered: Higgs production and decay, precision electroweak measurements, future of Higgs physics.
 
-##  Simplified Case
-### Abelian Higgs Model
 
 
-- Discuss a U(1) gauge theory with a single gauge field (photon).
-- Lagrangian:
+## The Higgs Mechanism 
+### Toy Model: The Abelian Higgs Model
+- Simplified verison of SM with $U(1)$ symmetry:  $A_{\mu}(x) \rightarrow e^{i\theta}A_{\mu}(x)$
+- Consider $U(1)$ gauge theory with *single* gauge field: Photon $A_{\mu}$ 
 
 $$
-  L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+  L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} \;\;\;\;\;\;\;\; \text{with}  \;\;\;\;\;\;\;\;  F_{\mu\nu} = \partial_\nu A_\mu - \partial_\mu A_\nu 
 $$
 
-where 
+- Local $U(1)$ gauge invariance: $A_{\mu}(x) \rightarrow A_{\mu}(x) - \partial_{\mu}\eta(x)$
+
+Mass term: 
+
 $$
-  F_{\mu\nu} = \partial_\nu A_\mu - \partial_\mu A_\nu
+  +\frac{1}{2} m^2 A_{\mu} A^{\mu}
 $$
 
-<!-- <div style="height: 40px;"></div> -->
+- Violates the local gauge invariance.
 
-<div class="fragment">
 
-### Here a fragment
-- Appears after
 
-</div>
 
-## This is an image
-### A good one
+## The Higgs Mechanism 
+### Extension of the model
+- Single complex scalar field $\phi$ that couples to the photon
+$$
+  L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + |D_\mu \phi|^2 - V(\phi)
+$$
+  - $D_\mu = \partial_\mu - ieA_\mu$
+  - $V(\phi) = \mu^2 |\phi|^2 + \lambda |\phi|^4$
 
-<div style="display: flex; width: 80%; height: auto; margin: auto;">
-  <figure style="text-align: center;">
-    <figcaption style="color: gray; font-size: 18px; margin-top: -15px;">[Here the source]</figcaption>
-    <img src="Images/icecube.png" style="max-width: 100%; height: 70%;">
-  </figure>
-</div>
+<hr>
 
-## Columns
-### 3 columns, the one in the center is empty
+$\mathcal{L}$ is invariant under:
+
+
+
+- Global $U(1)$ rotations: $\;\; A_{\mu}(x) \rightarrow e^{i\theta}A_{\mu}(x), \;\; \phi \rightarrow e^{i\theta} \phi$
+
+
+- Local gauge transformations:   $\;\;  A_\mu \rightarrow A_\mu - \partial_\mu \eta(x), \;\;\;\; \phi \rightarrow e^{-ie\eta(x)} \phi$
+
+
+
+## The scalar potential
+### Different solutions
+
+The potenial has two diffenet forms:
+
 
 :::: {.columns}
 
 ::: {.column width="50%"}
 
-<div style="height: 55px;"></div>
+<div style="height: 35px;"></div>
 
-<div style="display: flex; width: 80%; height: auto; margin: auto;">
-  <figure style="text-align: center;">
-    <img src="Images/icecube.png" style="max-width: 100%; height: auto;">
-    <figcaption style="color: gray; font-size: 18px; margin-top: -15px;">[Here the source]</figcaption>
-  </figure>
-</div>
-
-<div style="font-size: smaller;">
-Here a text that is smaller
-</div>
+- $\mu^2 > 0$: The vacuum state is at $\phi = 0$ 
+  - no symmetry breaking
 
 :::
 
-::: {.column width="5%"}
+::: {.column width="15%"}
 :::
-
-::: {.column width="40%"}
-
-**Bold text**:
-
-::: {.incremental}
-- first
-- second
-- third
-:::
+::: {.column width="35%"}
+<div style="margin-top: -80px;"></div>
+![](Images/higgs_1.png){width="250"}
 :::
 
 ::::
+
+<div style="margin-top: -30px;"></div>
+
+<hr>
+
+<!-- ----  -->
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<div style="margin-top: -10px;"></div>
+
+- $\mu^2 < 0$: The vacuum state is 
+  $$
+    \langle \phi \rangle = \sqrt{-\frac{\mu^2}{2\lambda}} e^{i\theta} = \frac{v}{\sqrt{2}} e^{i\theta}
+  $$
+  - Choise $\theta = 0 \; \rightarrow \;$ SSB
+
+:::
+
+::: {.column width="15%"}
+:::
+::: {.column width="35%"}
+<div style="margin-top: -20px;"></div>
+![](Images/higgs_2.png){width="250"}
+
+:::
+
+::::
+
+
+
+
+## Consequences of Symmetry Breaking in the Abelian Model {auto-animate=true}
+### Consequences of Symmetry Breaking
+
+- It is convenient to rewrite $\phi$ as 
+
+$$ 
+  \phi \equiv \frac{1}{\sqrt{2}} e^{i \frac{\chi(x)}{v}} \left( v + h(x) \right)
+$$
+
+Substitute $\phi$ into $\mathcal{L}$:
+
+$$
+\mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} + |D_\mu \phi|^2  - V(\phi)  
+$$
+
+
+$$
+\mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} - ev A_\mu \partial^\mu \chi + \frac{e^2 v^2}{2} A_\mu A^\mu + \frac{1}{2} \left( \partial_\mu h \partial^\mu h + 2\mu^2 h^2 \right) + \frac{1}{2} \left( \partial_\mu \chi \partial^\mu \chi \right ) + (h, \chi \text{inter})  
+$$
+
+
+
+## Slide 4: Consequences of Symmetry Breaking in the Abelian Model {auto-animate=true}
+### Consequences of Symmetry Breaking
+
+$$
+\mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} - ev A_\mu \partial^\mu \chi + \frac{e^2 v^2}{2} A_\mu A^\mu + \frac{1}{2} \left( \partial_\mu h \partial^\mu h + 2\mu^2 h^2 \right) + \frac{1}{2} \left( \partial_\mu \chi \partial^\mu \chi \right ) + (h, \chi \text{inter})  
+$$
+
+- When $\mu^2 < 0$, the [gauge field $A_\mu$ acquires a mass]{.fg}:
+
+$$
+  M_A = ev
+$$
+
+
+- The physical Higgs field $h$ emerges with mass:
+
+$$
+  m_h^2 = -2\mu^2
+$$
+
+- The Goldstone boson $\chi$: massles scalar field.
+
+## Gauge
+### Different gauges
+
+- $\chi$ can be removed by a gauge transformation, leaving a massive photon and a scalar Higgs field.
+
+
+## Intermezzo 
+### Hidden Symmetry
+
+- the vev brakes the U(1) global symmetry (explain what that means)
+- The Lagrangian is now invariant 
+- New tranformation {phi, sigma}
+
+
+::::{.columns}
+
+:::{.column width="35%"}
+
+<div style="height: 55px;"></div>
+
+- changig tau means a rotation in the phi
+- mass term not allowd becasue of linear symmetry
+
+<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
+$$ 
+  \phi \equiv \frac{1}{\sqrt{2}} e^{i \frac{\textcolor[RGB]{100,0,200}{\chi(x)}}{v}} \left( v + h(x) \right)
+$$
+</div>
+
+:::
+
+:::{.column width="65%"}
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<div id="higgs-plot" style="width: 90%; height: 400px;"></div>
+<script>
+  function higgsPotential(phi1, phi2, lambda, v) {
+    return lambda * (phi1 * phi1 + phi2 * phi2 - v * v) * (phi1 * phi1 + phi2 * phi2 - v * v);
+  }
+
+  var phi1 = [];
+  var phi2 = [];
+  var V = [];
+  var lambda = 1;
+  var v = 1.9;
+
+  var step = 0.1;
+  for (var i = -2; i <= 2; i += step) {
+    var rowPhi1 = [];
+    var rowPhi2 = [];
+    var rowV = [];
+    for (var j = -2; j <= 2; j += step) {
+      rowPhi1.push(i);
+      rowPhi2.push(j);
+      rowV.push(higgsPotential(i, j, lambda, v));
+    }
+    phi1.push(rowPhi1);
+    phi2.push(rowPhi2);
+    V.push(rowV);
+  }
+
+  var data = [{
+    x: phi1,
+    y: phi2,
+    z: V,
+    type: 'surface',
+    colorscale: [
+  [0, 'rgb(180, 0, 255)'],
+  [0.5, 'rgb(20, 55, 180)'],
+  [1, 'rgb(255, 200, 200)']
+   ],
+    showscale: false
+  }];
+
+  var layout = {
+    scene: {
+      xaxis: { title: 'Phi1' },
+      yaxis: { title: 'Phi2' },
+      zaxis: { title: 'V(Phi1, Phi2)', range: [0, 25] } // Adjust the range to remove excessive white space
+    },
+    margin: { // Adjust the margins to reduce white space
+      l: 100,
+      r: 0,
+      b: 0,
+      t: 0,
+      pad: 100
+    }
+  };
+
+  Plotly.newPlot('higgs-plot', data, layout);
+</script>
+
+
+:::
+
+::::
+
+## Gauge
+### Chosing a gauge
+
+
+## Introduction to the Weinberg-Salam Model
+### Weinberg-Salam Model
+- Extends the Abelian Higgs model to an $SU(2)_L×U(1)_Y$ gauge theory.
+- Introduces three $SU(2)_L$ gauge bosons $W_\mu^I$ (I = 1, 2, 3) and one $U(1)_Y$ gauge boson $B_\mu$.
+- The kinetic enerigy terms:
+  $$
+  L = -\frac{1}{4}W^I_{\mu\nu}W^{I\mu\nu} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu} 
+  $$
+  - $W^I_{\mu\nu} = \partial_\nu W^I_\mu - \partial_\mu W^I_\nu + g \epsilon^{IJK} W^J_\mu W^K_\nu$
+  - $B_{\mu\nu} = \partial_\nu B_\mu - \partial_\mu B_\nu$
+
+
+## Slide 6: Scalar Potential and VEV in Weinberg-Salam Model
+### Scalar Potential and VEV
+
+- Coupled to the gause fields he complex scalar $SU(2)$ doublet $\Phi$:
+  $$
+  \Phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}
+  $$
+
+- The scalar potential is similar to the Abelian model:
+  $$
+  V(\Phi) = \mu^2 |\Phi^{\dagger} \Phi| + \lambda (|\Phi^{\dagger} \Phi|)^2
+  $$
+- For $\mu^2 < 0$, the vacuum expectation value (VEV) of $\Phi$ is:
+  $$
+  \langle \Phi \rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v \end{pmatrix}
+  $$
+
+-  $g$ and $g'$ are coupling constants,
+
+## LAgrangian
+### Scalar contribution
+
+1. **Scalar Contribution to the Lagrangian**:
+   $$
+   \mathcal{L}_s = (D^\mu \Phi)^\dagger (D_\mu \Phi) - V(\Phi),
+   $$
+
+2. **Covariant Derivative**:
+   $$
+   D_\mu = \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} B_\mu Y,
+   $$
+   $\tau$ represents the Pauli matrices, $W_\mu$ and $B_\mu$ are the gauge fields, and $Y$ is the hypercharge.
+
+3. **Higgs Field in Unitary Gauge**:
+   $$
+   \Phi = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v + h \end{pmatrix},
+   $$
+
+
+
+## Slide 7: Gauge Boson Masses Calculation
+### Gauge Boson Masses
+
+$$
+    M^2 \sim \frac{1}{2} (0, v) \left( \frac{1}{2} g \tau \cdot W_\mu + \frac{1}{2} g' B_\mu \right)^2 \begin{pmatrix} 0 \\ v \end{pmatrix}.
+$$
+
+- The gauge bosons mix to form the physical gauge fields:
+
+<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
+  $$
+  W^\pm_\mu = \frac{1}{\sqrt{2}}(W_\mu^1 \mp iW_\mu^2)
+  $$
+  $$
+  Z_\mu = \frac{gW_\mu^3 - g'B_\mu}{\sqrt{g^2 + g'^2}} \equiv -sin\theta_W B_\mu + cos\theta_W W^3_\mu
+  $$
+  $$
+  A_\mu = \frac{g'W_\mu^3 + gB_\mu}{\sqrt{g^2 + g'^2}} \equiv cos\theta_W B_\mu + sin\theta_W W^3_\mu
+  $$
+
+</div>
+
+The weak mixing angle $\theta_W$ is defined by: $\sin \theta_W = \frac{g'}{\sqrt{g^2 + g'^2}}$
+
+The relationship with the electromagnetic coupling $e$ is: $e = g \sin \theta_W = g' \cos \theta_W$
+
+## Slide 8: Weak Mixing Angle and Massless Photon
+### Weak Mixing Angle and Photon
+- The masses of the gauge bosons are:
+
+$$
+  M_W = \frac{1}{2}gv, \quad M_Z = \frac{1}{2}\sqrt{g^2 + g'^2}v, \quad M_\gamma = 0
+$$
+
+<hr>
+
+### Goldstone Bosons
+
+
+:::: {.columns}
+
+
+::: {.column width="50%"}
+
+<!-- <div style="height: 55px;"></div> -->
+
+- $G = SU(2)_L \times U(1)_Y$
+- $H \subset G$:  $U(1)_{EM}$
+
+Three Goldstoes bosons:  $\vec{\omega} = (\omega_\pm, z)$
+
+:::
+
+::: {.column width="50%"}
+
+$\Phi = \frac{1}{\sqrt{2}} e^{i \frac{\textcolor[RGB]{100,0,200}{\omega} \cdot \tau}{2v}} \begin{pmatrix} 0 \\ v + h \end{pmatrix}.$
+
+:::
+::::
+
+
+
+
+# Fermions
+## Fermions
+### SU(2)_L Doublets for Fermions
+
+- Experimentally W-boson couples with only LH fermions.
+  - $SU(2)_L$ doublets 
+  $$
+    L_L = \begin{pmatrix} \nu_L \\ e_L \end{pmatrix}
+  $$
+
+Hypercharge assignments:
+
+:::: {.columns}
+::: {.column width="50%"}
+  - For $LH$ leptons: $Y_{L_L} = -1$
+:::
+
+::: {.column width="50%"}
+  - For $RH$ leptons: $Y_{e_R} = -2$
+:::
+::::
+
+
+
+## Slide 10: Fermion Mass Generation via Yukawa Coupling
+### Fermion Mass Generation
+
+Leptons can be coupled in a gauge invariant manner to the $SU(2)_L × U(1)_Y$ gauge fields
+
+$$
+  \mathcal{L}_{\text{lepton}} = i \bar{e}_R \gamma^\mu \left( \partial_\mu + i \frac{g'}{2} Y_e B_\mu \right) e_R + i \bar{L}_L \gamma^\mu \left( \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} Y_L B_\mu \right) L_L
+$$
+
+- A fermionic mass term is not allowed: gauge invariance forbidden.
+$$
+\mathcal{L}_m = -m \bar{\psi} \psi = -m (\bar{\psi}_L \psi_R + \bar{\psi}_R \psi_L)
+$$ 
+
+
+<!-- 
+  - For left-handed quarks: $Y_{Q_L} = \frac{1}{3}$
+  - For right-handed up quark: $Y_{u_R} = \frac{4}{3}$
+  - For right-handed down quark: $Y_{d_R} = -\frac{2}{3}$ -->
+
+
+
+- The Higgs boson, however, can couple in a gauge invariant fashion to the down quarks,
+
+## Slide 10: Fermion Mass Generation via Yukawa Coupling
+### Fermion Mass Generation
+
+:::: {.columns}
+::: {.column width="50%"}
+- For down-type quarks:
+
+$$
+  L_d = -Y_d \bar{Q}_L \Phi d_R + \text{h.c.}
+$$
+
+
+- mass term 
+
+$$
+  Y_d = \frac{m_d \sqrt{2}}{v}.
+$$
+:::
+
+::: {.column width="50%"}
+- For up-type quarks:
+  $$
+  \tilde{\Phi} \equiv i \tau_2 \Phi^* = \begin{pmatrix} \phi^0 \\ -\phi^- \end{pmatrix}
+  $$
+
+  is a $SU(2)$ doublet. 
+
+  We can write the SU(2)L invariant coupling
+  $$
+  L_u = -Y_u \bar{Q}_L \tilde{\Phi} u_R + \text{h.c.}
+  $$
+:::
+::::
+
+
+
+
+
+
+- These terms generate mass terms for quarks when $\Phi$ acquires a VEV.
+
+
+# Measurements
+
+## Slide 11: Importance of Mass Generation without Violating Gauge Invariance
+### Importance of Gauge-Invariant Mass Generation
+- The Higgs mechanism ensures gauge invariance while giving mass to particles.
+- Yukawa couplings generate fermion masses without violating gauge symmetry.
+- This avoids flavor-changing neutral currents, ensuring the model's consistency with observed physics.
+
+
+
 ## Complex Number Plot
 ### Last slide

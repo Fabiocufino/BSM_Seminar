@@ -1,0 +1,52 @@
+---
+title: "3D Plot of the Higgs Potential"
+format: html
+---
+
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<div id="higgs-plot"></div>
+<script>
+  function higgsPotential(phi1, phi2, lambda, v) {
+    return lambda * (phi1 * phi1 + phi2 * phi2 - v * v) * (phi1 * phi1 + phi2 * phi2 - v * v);
+  }
+
+  var phi1 = [];
+  var phi2 = [];
+  var V = [];
+  var lambda = 1;
+  var v = 1;
+
+  var step = 0.1;
+  for (var i = -2; i <= 2; i += step) {
+    var rowPhi1 = [];
+    var rowPhi2 = [];
+    var rowV = [];
+    for (var j = -2; j <= 2; j += step) {
+      rowPhi1.push(i);
+      rowPhi2.push(j);
+      rowV.push(higgsPotential(i, j, lambda, v));
+    }
+    phi1.push(rowPhi1);
+    phi2.push(rowPhi2);
+    V.push(rowV);
+  }
+
+  var data = [{
+    x: phi1,
+    y: phi2,
+    z: V,
+    type: 'surface'
+  }];
+
+  var layout = {
+    title: '3D Plot of the Higgs Potential',
+    scene: {
+      xaxis: { title: 'Phi1' },
+      yaxis: { title: 'Phi2' },
+      zaxis: { title: 'V(Phi1, Phi2)' }
+    }
+  };
+
+  Plotly.newPlot('higgs-plot', data, layout);
+</script>

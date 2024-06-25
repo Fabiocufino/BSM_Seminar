@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Higgs Potential Plot</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+<div id="higgs-plot" style="width: 100%; height: 600px;"></div>
+<script>
+  function higgsPotential(phi1, phi2, muSquared, lambda) {
+    return muSquared * (phi1 * phi1 + phi2 * phi2) + lambda * Math.pow((phi1 * phi1 + phi2 * phi2), 2);
+  }
+
+  var phi1 = [];
+  var phi2 = [];
+  var V = [];
+  var lambda = 5;
+  var muSquared = -10; // Change the sign here for the different solution
+
+  var step = 0.1;
+  for (var i = -2; i <= 2; i += step) {
+    var rowPhi1 = [];
+    var rowPhi2 = [];
+    var rowV = [];
+    for (var j = -2; j <= 2; j += step) {
+      rowPhi1.push(i);
+      rowPhi2.push(j);
+      rowV.push(higgsPotential(i, j, muSquared, lambda));
+    }
+    phi1.push(rowPhi1);
+    phi2.push(rowPhi2);
+    V.push(rowV);
+  }
+
+  var data = [{
+    x: phi1,
+    y: phi2,
+    z: V,
+    type: 'surface',
+    colorscale: [
+      [0, 'rgb(180, 0, 255)'],
+      [0.5, 'rgb(20, 55, 180)'],
+      [1, 'rgb(255, 200, 200)']
+    ],
+    showscale: false // Disable the colorbar
+  }];
+
+  var layout = {
+    width: 800,
+    height: 800,
+    scene: {
+      xaxis: { title: 'Phi1' },
+      yaxis: { title: 'Phi2' },
+      zaxis: { title: 'V(Phi1, Phi2)', range: [-10, 90] } // Adjust the range to remove excessive white space
+    },
+    margin: { // Adjust the margins to reduce white space
+      l: 100,
+      r: 0,
+      b: 0,
+      t: 0,
+      pad: 1000
+    }
+  };
+
+  Plotly.newPlot('higgs-plot', data, layout);
+</script>
+</body>
+</html>

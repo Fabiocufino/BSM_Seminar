@@ -1,25 +1,16 @@
 ---
-title: Higgs unitarity constraints
-subtitle: Some subtitle that I still don't know
+title: Higgs mechanism & unitarity constraints
+subtitle: Higgs mechanism and upper bound on the Higgs mass
 format: clean-revealjs
 html-math-method:
   method: mathjax
   url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 author:
-  - name: Fabio Cufino
+  - name: Fabio Cufino - Angelo Arisi
     affiliations: TU Dortmund University
 date: last-modified
 jupyter: python3
 ---
-
-
-# Introduction
-## Introduction
-### **Content:**
-- Overview of the Higgs boson discovery and its implications for the Standard Model (SM).
-- Discussion on Effective Field Theory (EFT) in Higgs physics.
-- Topics covered: Higgs production and decay, precision electroweak measurements, future of Higgs physics.
-
 
 
 ## The Higgs Mechanism 
@@ -48,7 +39,7 @@ $$
 ### Extension of the model
 - Single complex scalar field $\phi$ that couples to the photon
 $$
-  L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + |D_\mu \phi|^2 - V(\phi)
+  \;\;\;\;\;\;\;\; \quad\quad\quad\quad\quad \mathbfcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + |D_\mu \phi|^2 - V(\phi)
 $$
   - $D_\mu = \partial_\mu - ieA_\mu$
   - $V(\phi) = \mu^2 |\phi|^2 + \lambda |\phi|^4$
@@ -57,19 +48,16 @@ $$
 
 $\mathcal{L}$ is invariant under:
 
-
-
 - Global $U(1)$ rotations: $\;\; A_{\mu}(x) \rightarrow e^{i\theta}A_{\mu}(x), \;\; \phi \rightarrow e^{i\theta} \phi$
-
 
 - Local gauge transformations:   $\;\;  A_\mu \rightarrow A_\mu - \partial_\mu \eta(x), \;\;\;\; \phi \rightarrow e^{-ie\eta(x)} \phi$
 
 
 
-## The scalar potential
-### Different solutions
+## The scalar potential $V(\phi)$
+### Spontaneus Symmetry Breaking
 
-The potenial has two diffenet forms:
+The potentfial has two diffenet forms:
 
 
 :::: {.columns}
@@ -102,13 +90,13 @@ The potenial has two diffenet forms:
 
 ::: {.column width="50%"}
 
-<div style="margin-top: -10px;"></div>
+
 
 - $\mu^2 < 0$: The vacuum state is 
   $$
     \langle \phi \rangle = \sqrt{-\frac{\mu^2}{2\lambda}} e^{i\theta} = \frac{v}{\sqrt{2}} e^{i\theta}
   $$
-  - Choise $\theta = 0 \; \rightarrow \;$ SSB
+  - Choise $\theta = 0 \; \Longrightarrow \;$ breaks the *global* $U(1)$ symmetry
 
 :::
 
@@ -125,85 +113,168 @@ The potenial has two diffenet forms:
 
 
 
-## Consequences of Symmetry Breaking in the Abelian Model {auto-animate=true}
+## Consequences of SB in the Abelian Model {auto-animate=true}
 ### Consequences of Symmetry Breaking
 
-- It is convenient to rewrite $\phi$ as 
+- *Perturbation theroy*: It is convenient to rewrite $\phi$ 
 
+<div style="font-size:0.85em; text-align:center; margin-bottom: 10px;">
 $$ 
   \phi \equiv \frac{1}{\sqrt{2}} e^{i \frac{\chi(x)}{v}} \left( v + h(x) \right)
 $$
 
+</div>
+
 Substitute $\phi$ into $\mathcal{L}$:
 
+<div style="font-size:0.85em; text-align:center; margin-bottom: 10px;">
 $$
 \mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} + |D_\mu \phi|^2  - V(\phi)  
 $$
+</div>
 
+<div style="height: 25px;"></div>
 
+<div style="font-size:0.75em; text-align:center; margin-bottom: 10px;">
 $$
-\mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} - ev A_\mu \partial^\mu \chi + \frac{e^2 v^2}{2} A_\mu A^\mu + \frac{1}{2} \left( \partial_\mu h \partial^\mu h + 2\mu^2 h^2 \right) + \frac{1}{2} \left( \partial_\mu \chi \partial^\mu \chi \right ) + (h, \chi \text{inter})  
+  \mathcal{L} =  -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} + \left( \frac{v + h}{\sqrt{2}} \right)^2 \left[ -i \frac{\partial_\mu \chi}{v} + \frac{\partial_\mu h}{v + h} - ie A_\mu \right] \left[ i \frac{\partial_\mu \chi}{v} + \frac{\partial_\mu h}{v + h} + ie A_\mu \right] - \left( \frac{\mu^4}{\lambda} + \mu^2 h^2 + \frac{1}{2} \sqrt{\lambda} \mu h^3 + \frac{1}{16} \lambda h^4 \right)
 $$
 
+</div>
 
-
-## Slide 4: Consequences of Symmetry Breaking in the Abelian Model {auto-animate=true}
+## Consequences of SB in the Abelian Model {auto-animate=true}
 ### Consequences of Symmetry Breaking
 
-$$
-\mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} - ev A_\mu \partial^\mu \chi + \frac{e^2 v^2}{2} A_\mu A^\mu + \frac{1}{2} \left( \partial_\mu h \partial^\mu h + 2\mu^2 h^2 \right) + \frac{1}{2} \left( \partial_\mu \chi \partial^\mu \chi \right ) + (h, \chi \text{inter})  
-$$
+<div style="height: 25px;"></div>
 
-- When $\mu^2 < 0$, the [gauge field $A_\mu$ acquires a mass]{.fg}:
-
+<div style="font-size:0.75em; text-align:center; margin-bottom: 10px;">
 $$
-  M_A = ev
+  \mathcal{L} =  -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} + \left( \frac{v + h}{\sqrt{2}} \right)^2 \left[ -i \frac{\partial_\mu \chi}{v} + \frac{\partial_\mu h}{v + h} - ie A_\mu \right] \left[ i \frac{\partial_\mu \chi}{v} + \frac{\partial_\mu h}{v + h} + ie A_\mu \right] - \left( \frac{\mu^4}{\lambda} + \mu^2 h^2 + \frac{1}{2} \sqrt{\lambda} \mu h^3 + \frac{1}{16} \lambda h^4 \right)
 $$
 
+</div>
 
-- The physical Higgs field $h$ emerges with mass:
 
+
+<div style="height: 35px;"></div>
+
+:::: {.columns}
+::: {.column width="45%"}
+<div style="font-size: smaller;">
+- Terms involving only $A_\mu$:
+</div>
+<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
 $$
-  m_h^2 = -2\mu^2
+  \mathcal{L} = -\frac{1}{4} F_{\mu\nu}^2 + \frac{1}{2} e^2 v^2 A_\mu^2 + \cdots
+$$
+</div>
+
+:::
+::: {.column width="1%"}
+:::
+::: {.column width="54%"}
+<div style="height: 65px;"></div>
+<div style="font-size: smaller;">
+[Gauge field $A_\mu$ acquires a mass]{.fg}: $\;\; m_A = ev$
+</div>
+
+:::
+::::
+
+<!-- ------------HIGGS--- --> 
+
+<div style="height: 35px;"></div>
+
+:::: {.columns}
+::: {.column width="45%"}
+<div style="font-size: smaller;">
+- Terms in the potential with $h_\mu$:
+</div>
+<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
+$$
+  -\frac{\mu^4}{\lambda} - \mu^2 h^2 - \frac{1}{2} \sqrt{\lambda} \mu h^3 - \frac{1}{16} \lambda h^4 
+$$
+</div>
+
+:::
+::: {.column width="1%"}
+:::
+::: {.column width="54%"}
+<div style="height: 65px;"></div>
+<div style="font-size: smaller;">
+The Higgs field $h$ has a mass: $\;\; m_h^2 = -2\mu^2$
+</div>
+
+:::
+::::
+
+<div style="height: 35px;"></div>
+
+<div style="font-size: smaller;">
+- The Goldstone boson $\chi(x) \;\; \Longrightarrow \;\;$  massles scalar field
+</div>
+
+## Lagrangian spectrum
+### Decoupling limit & Unitary gauge
+
+- Simplify things by decoupling $\chi(x)$ through the limit $\mu, \lambda → \infty$ with $v$ fixed
+
+<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
+$$
+  \mathcal{L} = -\frac{1}{4} F_{\mu\nu}F^{\mu\nu} + \frac{1}{2} m_A^2 \left( A_\mu + \frac{1}{e v} \partial_\mu \chi \right)^2
 $$
 
-- The Goldstone boson $\chi$: massles scalar field.
+</div>
+<div style="margin-top: -20px;"></div>
 
-## Gauge
-### Different gauges
+- $\mathcal{L}$ content:
+  - Gauge boson mass term
+  - Kinetic term for $\chi(x)$
+  - Kinetic mixing term $A_\mu \partial_\mu \chi \; \Longrightarrow$  removed through gauge-fixing
 
-- $\chi$ can be removed by a gauge transformation, leaving a massive photon and a scalar Higgs field.
+<div style="height: 35px;"></div>
+
+- **Unitary gauge**: 
+<div style="font-size:0.9em; text-align:center; margin-bottom: 20px;">
+<div style="margin-top: -20px;"></div>
+$$
+  A_\mu \rightarrow A_\mu' = A_\mu -  \frac{1}{e v} \partial_\mu \chi
+$$ 
+</div>
+
+  - Goldstone boson has been 'eaten' to give the photon mass. 
+
+
 
 
 ## Intermezzo 
 ### Hidden Symmetry
 
-- the vev brakes the U(1) global symmetry (explain what that means)
-- The Lagrangian is now invariant 
-- New tranformation {phi, sigma}
+- The VEV  breaks the global $U(1)$ symmetry: $\;\;\;\; \phi(x) \rightarrow e^{i\theta} \phi(x)$
+- Parametrization <div style="margin-top: -30px;"></div> <div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">  $$ 
+  \phi \equiv \frac{1}{\sqrt{2}} e^{i \frac{\chi(x)}{v}} \left( v + h(x) \right)
+$$
+</div>
+- The symmetry is not broken: $\chi(x) \rightarrow \chi(x) + v \theta \;$ and $\; h(x) \rightarrow h(x)$
+
 
 
 ::::{.columns}
 
-:::{.column width="35%"}
+:::{.column width="40%"}
 
-<div style="height: 55px;"></div>
+<div style="height: 45px;"></div>
+Consequence:
 
-- changig tau means a rotation in the phi
-- mass term not allowd becasue of linear symmetry
-
-<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
-$$ 
-  \phi \equiv \frac{1}{\sqrt{2}} e^{i \frac{\textcolor[RGB]{100,0,200}{\chi(x)}}{v}} \left( v + h(x) \right)
-$$
-</div>
+- The shift forbids a mass term for $\chi(x)$
+- Movement around the flat direction of the potential.
 
 :::
 
-:::{.column width="65%"}
+:::{.column width="60%"}
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<div id="higgs-plot" style="width: 90%; height: 400px;"></div>
+<div id="higgs-plot" style="width: 40%; height: 350px;"></div>
 <script>
   function higgsPotential(phi1, phi2, lambda, v) {
     return lambda * (phi1 * phi1 + phi2 * phi2 - v * v) * (phi1 * phi1 + phi2 * phi2 - v * v);
@@ -266,14 +337,12 @@ $$
 
 ::::
 
-## Gauge
-### Chosing a gauge
 
 
 ## Introduction to the Weinberg-Salam Model
 ### Weinberg-Salam Model
 - Extends the Abelian Higgs model to an $SU(2)_L×U(1)_Y$ gauge theory.
-- Introduces three $SU(2)_L$ gauge bosons $W_\mu^I$ (I = 1, 2, 3) and one $U(1)_Y$ gauge boson $B_\mu$.
+- Introduces three $SU(2)_L$ gauge bosons $W_\mu^I$ $(I = 1, 2, 3)$ and one $U(1)_Y$ gauge boson $B_\mu$.
 - The kinetic enerigy terms:
   $$
   L = -\frac{1}{4}W^I_{\mu\nu}W^{I\mu\nu} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu} 
@@ -282,208 +351,645 @@ $$
   - $B_{\mu\nu} = \partial_\nu B_\mu - \partial_\mu B_\nu$
 
 
-## Slide 6: Scalar Potential and VEV in Weinberg-Salam Model
+
+- $SU(2)_L$ and $U(1)_Y$ coupling constants are $g$ and $g'$
+
+## Scalar Potential and VEV in Weinberg-Salam Model
 ### Scalar Potential and VEV
 
-- Coupled to the gause fields he complex scalar $SU(2)$ doublet $\Phi$:
-  $$
-  \Phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}
-  $$
+- Coupled to the gause fields the complex scalar $SU(2)$ doublet $\Phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}$
 
 - The scalar potential is similar to the Abelian model:
   $$
   V(\Phi) = \mu^2 |\Phi^{\dagger} \Phi| + \lambda (|\Phi^{\dagger} \Phi|)^2
   $$
-- For $\mu^2 < 0$, the vacuum expectation value (VEV) of $\Phi$ is:
+- For $\mu^2 < 0$, the VEV of $\Phi$ is:
   $$
   \langle \Phi \rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v \end{pmatrix}
   $$
 
--  $g$ and $g'$ are coupling constants,
+- With this choice the electromagnetig charge 
 
-## LAgrangian
+$$
+  Q = \frac{(\tau_3 + Y)}{2} \;\;\; \text{with} \;\;\; Y_{\phi} = 1
+$$
+
+## Scalar contribution to the Lagrangian
 ### Scalar contribution
 
-1. **Scalar Contribution to the Lagrangian**:
-   $$
-   \mathcal{L}_s = (D^\mu \Phi)^\dagger (D_\mu \Phi) - V(\Phi),
-   $$
+- Scalar Contribution to the Lagrangian: $\;\;\; \mathcal{L}_s = (D^\mu \Phi)^\dagger (D_\mu \Phi) - V(\Phi)$
 
-2. **Covariant Derivative**:
+- Covariant Derivative:
+<div style="font-size:0.9em; text-align:center; margin-bottom: 20px;">
+  $$
+   D_\mu = \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} B_\mu Y
+  $$
+  </div>
+
+- In Unitary Gauge:
+<div style="font-size:0.9em; text-align:center; margin-bottom: 20px;">
    $$
-   D_\mu = \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} B_\mu Y,
+   \Phi(x) = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v + h(x) \end{pmatrix},
    $$
-   $\tau$ represents the Pauli matrices, $W_\mu$ and $B_\mu$ are the gauge fields, and $Y$ is the hypercharge.
+   </div>
+   - no Goldstone bosons
+   - Higgs field remains with mass
 
-3. **Higgs Field in Unitary Gauge**:
-   $$
-   \Phi = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v + h \end{pmatrix},
-   $$
-
-
-
-## Slide 7: Gauge Boson Masses Calculation
-### Gauge Boson Masses
-
+<div style="font-size:0.9em; text-align:center; margin-bottom: 20px;">
 $$
-    M^2 \sim \frac{1}{2} (0, v) \left( \frac{1}{2} g \tau \cdot W_\mu + \frac{1}{2} g' B_\mu \right)^2 \begin{pmatrix} 0 \\ v \end{pmatrix}.
+    M^2 \sim \frac{1}{2} (0, v) \left( \frac{1}{2} g \tau \cdot W_\mu + \frac{1}{2} g' B_\mu \right)^2 \begin{pmatrix} 0 \\ v \end{pmatrix}
 $$
-
-- The gauge bosons mix to form the physical gauge fields:
-
-<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
-  $$
-  W^\pm_\mu = \frac{1}{\sqrt{2}}(W_\mu^1 \mp iW_\mu^2)
-  $$
-  $$
-  Z_\mu = \frac{gW_\mu^3 - g'B_\mu}{\sqrt{g^2 + g'^2}} \equiv -sin\theta_W B_\mu + cos\theta_W W^3_\mu
-  $$
-  $$
-  A_\mu = \frac{g'W_\mu^3 + gB_\mu}{\sqrt{g^2 + g'^2}} \equiv cos\theta_W B_\mu + sin\theta_W W^3_\mu
-  $$
-
 </div>
 
-The weak mixing angle $\theta_W$ is defined by: $\sin \theta_W = \frac{g'}{\sqrt{g^2 + g'^2}}$
+## Weak Mixing Angle and Massless Photon
+### Gauge Boson Masses
 
-The relationship with the electromagnetic coupling $e$ is: $e = g \sin \theta_W = g' \cos \theta_W$
 
-## Slide 8: Weak Mixing Angle and Massless Photon
-### Weak Mixing Angle and Photon
+- The physical gauge fields are $W^\pm$, $Z$ and $\gamma$
+
+<div style="font-size:0.85em; text-align:center; margin-top: -20px;">
+\begin{align*}
+  W^\pm_\mu &= \frac{1}{\sqrt{2}} (W^1_\mu \mp i W^2_\mu) \\[10pt]
+  Z^\mu &= \frac{-g'B_\mu + g W^3_\mu}{\sqrt{g^2 + g'^2}} \equiv -\sin \theta_W B_\mu + \cos \theta_W W^3_\mu \\[10pt]
+  A^\mu &= \frac{g B_\mu + g' W^3_\mu}{\sqrt{g^2 + g'^2}} \equiv \cos \theta_W B_\mu + \sin \theta_W W^3_\mu.
+\end{align*}
+</div>
+- The weak mixing angle $\theta_W$ is defined by $\sin \theta_W = \frac{g'}{\sqrt{g^2 + g'^2}}$
+
 - The masses of the gauge bosons are:
 
 $$
-  M_W = \frac{1}{2}gv, \quad M_Z = \frac{1}{2}\sqrt{g^2 + g'^2}v, \quad M_\gamma = 0
+  M_W^2 = \frac{1}{4}g^2v^2 \quad \;\;\; M_Z^2 = \frac{1}{4}(g^2 + g'^2)v^2 \quad \;\;\; M_\gamma^2 = 0
 $$
 
-<hr>
 
-### Goldstone Bosons
 
+## Higgs and Fermions
+### Lepton masses 
+
+- Different transformation for $LH$ ($SU(2)$ doublets) and $RH$ ($SU(2)$ singlets) chiral states.
+- Fermion mass term in Lagrangian:
+    $$
+    -m\bar{\psi}\psi = -m \left( \bar{\psi}_R \psi_L + \bar{\psi}_L \psi_R \right)
+    $$
+  - Does not respect $SU(2)_L$ $\times$ $U(1)_Y$ gauge symmetry.
+
+
+- $SU(2)$ local Gauge Transformation:
+  - Higgs mechanism $\phi(x)$ ($SU(2)$ doublet): $\;\; \phi' = \left( I + ig_W \epsilon(x) \cdot \mathbf{T} \right)\phi$
+  - $LH$ doublet of fermion fields: $\;\;  \bar{L}' = \bar{L}\left(I - ig_W \epsilon(x) \cdot \mathbf{T} \right)$
+
+
+## Higgs and Fermions
+### Leptons and up-type quarks masses 
+
+- Combination $\bar{L} \phi$ is invariant under $SU(2)_L$ gauge transformations.
+- Combining with a $RH$ singlet $\;\Longrightarrow \;$ $\bar{L}\phi R$ is invariant under $SU(2)_L$ and $U(1)_Y$ gauge transformations.
+  - Lagrangian term: $-g_f(\bar{L} \phi R + \bar{R} \phi^\dagger L)$
+
+**Electron Example:**
+
+  - For the $SU(2)_L$ doublet containing the electron:
+
+  $$
+    \;\;\; \mathcal{L}_e  = -g_e \left[ \begin{pmatrix} \bar{\nu}_e & \bar{e} \end{pmatrix}_L \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix} e_R + \bar{e}_R \begin{pmatrix} \phi^{+*} & \phi^{0*} \end{pmatrix} \begin{pmatrix} \nu_e \\ e \end{pmatrix}_L \right] \\
+  $$
+
+
+  $$
+  \mathcal{L}_e  = -\frac{g_e v}{\sqrt{2}} (\bar{e}_L e_R + \bar{e}_R e_L) - \frac{g_e}{\sqrt{2}} h (\bar{e}_L e_R + \bar{e}_R e_L)
+  $$
+
+
+
+
+## Higgs and Fermions
+### down-type quarks masses 
+
+- Yukawa coupling $g_e$ is chosen to match observed electron mass:
+    $$
+    g_e = \sqrt{2} \frac{m_e}{v}
+    $$
+
+**Problem**: Non-zero VEV is in the lower (neutral) component of the Higgs doublet.
+
+- $(\bar{L}\phi R + \bar{R}\phi^{\dagger}L)$ generate $m$ only for lower component of an $SU(2)_L$ doublet.
+ 
+- Achieved by constructing the conjugate doublet $\;\; \phi_c \equiv i \tau_2 \phi^* = \begin{pmatrix} \phi^0 \\ -\phi^- \end{pmatrix}$
+  - A gauge invariant mass term can be constructed from $(\bar{L}\phi_c R + \bar{R}\phi^{\dagger}_c L)$
+
+$$
+   \mathcal{L}_u = -\frac{g_u v}{\sqrt{2}} (\bar{u}_L u_R + \bar{u}_R u_L) - \frac{g_u}{\sqrt{2}} h (\bar{u}_L u_R + \bar{u}_R u_L)
+$$
+
+# Higgs unitarity contraints
+
+
+
+--- 
+
+
+## Bounds from precision measurements
+### The mass of the W
+
+
+## Perturbative Unitarity
+
+### **Unitarity**
+- Arises from quantum mechanical scattering theory.
+- It is based on the unitarity bound on scattering amplitudes -> Conservation of probability.
+
+<div class="fragment">
+### **Why "Perturbative"?**
+- If the matrix element at whatever perturbative order does not satisfy unitarity condition, higher order contribution must cancel out remaining terms.
+- Insights of new physics.
+</div>
+<div class="fragment">
+### **Application**
+- Tool to understand the theoretical structure of spontanuosly broken gauge theories.
+- **Specific to our case**: Estimate an upper bound on the Higgs boson mass.
+</div>
+
+
+## Computation of the unitarity bound
+### QM scattering theory
+- Let's start from an incoming plane wave propagating in the z direction:
+$$
+  \psi(\vec{r}) = e^{ik \cdot \vec{r}} = e^{ikr\cos\theta}
+$$
+
+- rewritten in terms of the spherical Bessel functions and the Legendre polynomials:
+$$
+  \psi(\vec{r}) = \sum_{l=0}^{\infty}(2l +1)(i)^l j_l(kr)P_l(\cos\theta)
+$$
+
+<div style="margin-top:-30px;"></div>
+<div class="fragment">
+
+- for $kr>>l$  this approximation holds:
+$$
+  \psi(\vec{r}) \simeq \frac{i}{2k}\sum_{l=0}^{\infty}(2l +1)(i)^l \left[\frac{e^{-i(kr - l\pi/2)}}{r} - \frac{e^{+i(kr - l\pi/2)}}{r} \right]P_l(\cos\theta)
+$$
+- Let's add the function $S_l(k)$ which describes the action of the scattering center. It can only modify the outgoing wave.
+</div>
+
+
+---
+
+$$
+  \psi(\vec{r}) \simeq \frac{i}{2k}\sum_{l=0}^{\infty}(2l +1)(i)^l \left[\frac{e^{-i(kr - l\pi/2)}}{r} - S_l(k)\frac{e^{+i(kr - l\pi/2)}}{r} \right]P_l(\cos\theta)
+$$
+
+- where  $|S_l(k) \leq 1|$.  This is the source of the **unitarity bound**. 
+After manipulation:
+
+$$
+  \psi(\vec{r}) \simeq e^{ikr\cos\theta} + \left[\sum_{l=0}^{\infty}(2l +1)\frac{S_l(k)-1}{2ik}P_l(\cos\theta)\right]\frac{e^{ikr}}{r}
+$$
+<div class="fragment">
+- calling:
+
+$$
+  f(\theta) = \frac{1}{k}\sum_{l=0}^{\infty}(2l +1)a_l(k)P_l(\cos\theta)
+$$
+
+$$
+  a_l(k) = \frac{S_l(k)-1}{2i}
+$$
+</div>
+
+---
+
+::: {.columns}
+::: {.column width="33%"}
+\begin{align}
+|a_l| \leq 1
+\end{align}
+:::
+::: {.column width="33%"}
+\begin{align}
+|\Re{a_l}| \leq 1/2
+\end{align}
+:::
+::: {.column width="33%"}
+\begin{align}
+0 \leq |\Im{a_l}| \leq 1
+\end{align}
+:::
+:::
+
+<div class="fragment">
+
+<div>
+  <figure style="text-align: center;">
+    <img src="Images/unitary circle.jpeg" style="display: block; margin-left: auto; margin-right: auto; width: 70%;">
+    <figcaption style="color: gray; font-size: 18px; margin-top: -15px;">[https://arxiv.org/abs/2207.01064]</figcaption>
+  </figure>
+</div>
+
+</div>
+
+::: {#border-container .fragment}
+<div class="highlight-border1"></div>
+
+:::
+
+<style>
+
+.highlight-border1 {
+  border: 3px solid #b491f4;
+  border-radius: 5px;
+  padding: 10px;
+  width: 180px;
+  height: 65px;
+  position: absolute;
+  top: 20px;
+  left: 430px;
+  box-sizing: border-box;
+}
+</style>
+
+
+---
+
+## Computation of the unitarity bound
+### Translation to QFT
+- From QM scattering theory we have $\frac{d\sigma}{d\Omega} = |f(\theta)|^2$ which we just computed:
+$$
+  |f(\theta)|^2 = |\frac{1}{k}\sum_{l=0}^{\infty}(2l +1)a_l(k)P_l(\cos\theta)|^2
+$$
+- While in QFT the differential cross section for a two-to-two scattering the the CM frame is:
+$$
+  \left(\frac{d\sigma}{d\Omega}\right)_{CM} = \frac{|\mathcal{M}|^2}{64\pi^2 E^2_{CM}}
+$$
+where the masses are take equal for simplicity. Equating the two in the case of $E_{CM} \approx 2|\vec{p}|$ we obtain:
+$$
+  \mathcal{M} = 16\pi \sum_{l=0}^{\infty}(2l +1)a_l(|\vec{p}|)P_l(\cos\theta)
+$$
+
+---
+
+## Longitudinal vector bosons  
+### Energy dependence
+- After EWSB gauge bosons acquire a mass.
+- Equivalent of acquiring a **longitudinal polarization**.
+
+<div style="margin-bottom: -10px;"></div> <!-- Questo div può essere rimosso se non necessario -->
+
+<div class="fragment" style="margin-top: -20px; line-height: 1.2;"></div>
+
+<p style="margin-bottom: 5px;">For a vector with a momentum on the z-axis $p^{\mu} = (E,0,0,p_z)$:</p>
+
+<p style="margin-bottom: 5px;">- Transverse polarization:</p>
+
+<div style="margin-top: -10px;">
+
+\begin{array}{cc}
+  \epsilon_{T1}=(0,1,0,0) & \epsilon_{T2}=(0,0,1,0)
+\end{array}
+
+</div>
+
+<p style="margin-top: -10px; margin-bottom: 5px;">No energy dependence.</p>
+
+<p style="margin-top: -10px; margin-bottom: 5px;">- Longitudinal polarization:</p>
+
+<div style="margin-top: -10px;">
+
+$$
+ \epsilon_{L} = \frac{1}{m}(p_z,0,0,E)
+$$
+
+</div>
+
+<p style="margin-top: -10px;">Energy dependence.</p>
+
+
+
+---
+
+## Longitudinal vector boson scattering 
+### 1) 4 point diagram $W^+_LW^-_L \rightarrow W^+_LW^-_L$ 
+
+<style>
+  /* Specific styling for reducing spacing */
+  .reduce-space {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.1 !important; /* Adjust line-height for tighter spacing */
+  }
+  .reduce-space p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .reduce-space div {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .reduce-space .formula-container {
+    margin-top: -10px !important; /* Negative margin to reduce space further */
+  }
+</style>
 
 :::: {.columns}
 
+::: {.column width="40%"}
 
-::: {.column width="50%"}
+<div>
+  <figure style="text-align: center;">
+    <img src="Images/4point.jpeg" style="max-width: 100%; height: auto;">
+    <figcaption style="color: gray; font-size: 18px; margin-top: -15px;">[https://arxiv.org/abs/2207.01064]</figcaption>
+  </figure>
+</div>
 
-<!-- <div style="height: 55px;"></div> -->
+<div style="font-size: smaller;">
+  The vertex is: $ig^2(2g_{\mu\sigma}g_{\nu\rho} - g_{\mu\nu}g_{\rho\sigma} - g_{\mu\rho}g_{\nu\sigma})$
+</div>
 
-- $G = SU(2)_L \times U(1)_Y$
-- $H \subset G$:  $U(1)_{EM}$
+:::
 
-Three Goldstoes bosons:  $\vec{\omega} = (\omega_\pm, z)$
+::: {.column width="60%" .reduce-space}
+
+<p>The energy-momentum 4 vectors:</p>
+
+<div class="formula-container">
+  
+  \begin{array}{cc}
+    p_+=(E,0,0,p) & k_+=(E,p\sin\theta,0,p\cos\theta)\\
+    p_-=(E,0,0,-p) & k_-=(E,-p\sin\theta,0,-p\cos\theta) 
+  \end{array}
+  
+</div>
+
+<div class="fragment">
+  <p>The longitudinal polarization vectors:</p>
+    
+  \begin{aligned}
+    &e_l(p_+)=\left(\frac{p}{M_W},0,0,\frac{E}{M_W}\right) \\
+    &e_l(k_+)=\left(\frac{p}{M_W},\frac{E}{M_W}\sin\theta,0,\frac{E}{M_W}\cos\theta\right) \\
+    &e_l(p_-)=\left(\frac{p}{M_W},0,0,-\frac{E}{M_W}\right) \\
+    &e_l(k_-)=\left(\frac{p}{M_W},-\frac{E}{M_W}\sin\theta,0,-\frac{E}{M_W}\cos\theta\right) \\
+  \end{aligned}
+    
+</div>
 
 :::
 
-::: {.column width="50%"}
-
-$\Phi = \frac{1}{\sqrt{2}} e^{i \frac{\textcolor[RGB]{100,0,200}{\omega} \cdot \tau}{2v}} \begin{pmatrix} 0 \\ v + h \end{pmatrix}.$
-
-:::
 ::::
 
+---
+
+- After calculation the matrix element has a $\frac{E^4}{M_W^4}$ dependence.
+- The high energy limit:
+
+$$
+i\mathcal{M} \approx ig^2\frac{E^4}{M_W^4}
+$$
+
+violates unitarity for high energies.
 
 
+- But we still have to add tree level diagrams.
 
-# Fermions
-## Fermions
-### SU(2)_L Doublets for Fermions
+---
 
-- Experimentally W-boson couples with only LH fermions.
-  - $SU(2)_L$ doublets 
-  $$
-    L_L = \begin{pmatrix} \nu_L \\ e_L \end{pmatrix}
-  $$
-
-Hypercharge assignments:
+## Longitudinal vector boson scattering 
+### 2) Adding tree level contribution 
 
 :::: {.columns}
-::: {.column width="50%"}
-  - For $LH$ leptons: $Y_{L_L} = -1$
+
+::: {.column width="60%"}
+
+
+<div style="display: flex; width: 80%; height: auto; margin: auto;">
+  <figure style="text-align: center;">
+    <img src="Images/yZ_contribution.jpeg" style="max-width: 100%; height: 250px;">
+    <figcaption style="color: gray; font-size: 18px; margin-top: -15px;">[https://arxiv.org/abs/2207.01064]</figcaption>
+  </figure>
+</div>
+
+
+<div style="font-size: smaller;">
+
+The Feynmann rule for the vertex is:
+
+$$
+i
+\left\{
+\begin{array}{ll}
+  e \\
+  g\cos\theta_W \\
+\end{array}
+\right\}
+[g_{\mu\nu}(-p_- + p_+)_{\alpha} + g_{\mu\alpha}(q + p_+)_{\nu} + g_{\nu\alpha}(-q - p_-)_{\mu}]
+$$
+</div>
+
 :::
 
-::: {.column width="50%"}
-  - For $RH$ leptons: $Y_{e_R} = -2$
+
+::: {.column width="40%"}
+
+::: {.incremental}
+
+The propagators are:
+
+\begin{array}{cc}
+   \frac{-i}{q^2 - M_Z^2} \left[g_{\alpha\beta} - \frac{q_{\alpha}q_{\beta}}{M_Z^2}\right]  \quad \text{and} \quad & \frac{-ig_{\alpha\beta}}{q^2}\\
+\end{array}
+
+- Every of the four diagrams grows with $\frac{E^4}{M_W^4}$
+- But summing them together they all cancel away.
+
 :::
+:::
+
+::::
+:::: {.columns}
+
+::: {.column width="60%"}
+<div class="fragment">
+
+- The matrix element becomes:
+$$
+i\mathcal{M}=i\frac{g^2}{4M_W^2}\left[s+t+\mathcal{O(M_W^2)}\right]
+$$
+
+</div>
+
+:::
+
+
+::: {.column width="40%"}
+
+<div class="fragment">
+
+- There is still an $\frac{E^2}{M_W^2}$ dependece left.
+
+</div>
+
+:::
+
 ::::
 
 
+---
 
-## Slide 10: Fermion Mass Generation via Yukawa Coupling
-### Fermion Mass Generation
+## Upper bound on the energy scale
+### Using perturbative unitarity
 
-Leptons can be coupled in a gauge invariant manner to the $SU(2)_L × U(1)_Y$ gauge fields
+- We can get an estimate on the energy at which perturbative unitarity is violated.
+
+
+- The relation obtained before on $\mathcal{M}$:
 
 $$
-  \mathcal{L}_{\text{lepton}} = i \bar{e}_R \gamma^\mu \left( \partial_\mu + i \frac{g'}{2} Y_e B_\mu \right) e_R + i \bar{L}_L \gamma^\mu \left( \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} Y_L B_\mu \right) L_L
+\mathcal{M}=16\pi\sum_{J=0}^{\infty}(2J+1)a_JP_J(\cos\theta)
+$$
+$$
+\int_{-1}^{1}P_J(\cos \theta)d(\cos \theta) \mathcal{M} = 16\pi\sum_{l=0}^{\infty}(2J+1)a_J\int_{-1}^{1}P_J(\cos \theta)P_J(\cos \theta)d(\cos \theta)
 $$
 
-- A fermionic mass term is not allowed: gauge invariance forbidden.
+- The ortogonality relation of the Legendre polynomial goes:
+
 $$
-\mathcal{L}_m = -m \bar{\psi} \psi = -m (\bar{\psi}_L \psi_R + \bar{\psi}_R \psi_L)
-$$ 
+\int_{-1}^{1} d(\cos \theta) \, P_J(\cos \theta) P_{J'}(\cos \theta) = \frac{2}{2J + 1} \delta_{JJ'}
+$$
 
+---
 
-<!-- 
-  - For left-handed quarks: $Y_{Q_L} = \frac{1}{3}$
-  - For right-handed up quark: $Y_{u_R} = \frac{4}{3}$
-  - For right-handed down quark: $Y_{d_R} = -\frac{2}{3}$ -->
+- We are able to get a definition on the Jth partial wave amplitude:
+$$
+a_J(s) = \frac{1}{32 \pi} \int_{-1}^{1} d(\cos \theta) \, \mathcal{M}(s, \cos \theta) P_J(\cos \theta)
+$$
+$$
+a_0(s) = \frac{1}{32 \pi} \int_{-1}^{1} d(\cos \theta) \, \mathcal{M}(s, \cos \theta)
+$$
+- We have the relations:
+\begin{array}
+i\mathcal{M} \approx i\frac{g^2}{4M_W^2}\left[s+t\right] \quad \text{               } \quad &  t = \frac{s}{2}(\cos\theta - 1)
+\end{array}
 
+- Plugging them in and applying the bound $|\Re{a_0}| \leq 1/2$:
 
+\begin{array}{cc}
+   a_0 \approx g^2\frac{s}{64\pi M_W^2} \leq 1/2 \quad \text{so} \quad & s \leq \frac{1}{g^2}32\pi M_W^2 \approx (1200GeV)^2\\
+\end{array}
 
-- The Higgs boson, however, can couple in a gauge invariant fashion to the down quarks,
+- The theory breaks down at the TeV scale.
 
-## Slide 10: Fermion Mass Generation via Yukawa Coupling
-### Fermion Mass Generation
+::: {#border-container .fragment}
+<div class="highlight-border2"></div>
+
+:::
+
+<style>
+
+.highlight-border2 {
+  border: 3px solid #b491f4;
+  border-radius: 5px;
+  padding: 10px;
+  width: 384px;
+  height: 65px;
+  position: absolute;
+  top: 500px;
+  left: 515px;
+  box-sizing: border-box;
+}
+</style>
+
+---
+
+## Longitudinal vector boson scattering 
+### 3) Adding tree level Higgs contribution
 
 :::: {.columns}
-::: {.column width="50%"}
-- For down-type quarks:
 
-$$
-  L_d = -Y_d \bar{Q}_L \Phi d_R + \text{h.c.}
-$$
+::: {.column width="60%"}
+
+<div>
+  <figure style="text-align: center;">
+    <img src="Images/higgs_contribution.jpeg" style="max-width: 100%; height: 300px;">
+    <figcaption style="color: gray; font-size: 18px; margin-top: -15px;">[https://arxiv.org/abs/2207.01064]</figcaption>
+  </figure>
+</div>
 
 
-- mass term 
-
-$$
-  Y_d = \frac{m_d \sqrt{2}}{v}.
-$$
 :::
 
-::: {.column width="50%"}
-- For up-type quarks:
-  $$
-  \tilde{\Phi} \equiv i \tau_2 \Phi^* = \begin{pmatrix} \phi^0 \\ -\phi^- \end{pmatrix}
-  $$
 
-  is a $SU(2)$ doublet. 
+::: {.column width="40%"}
 
-  We can write the SU(2)L invariant coupling
-  $$
-  L_u = -Y_u \bar{Q}_L \tilde{\Phi} u_R + \text{h.c.}
-  $$
+::: {.incremental}
+The propagator is:
+$$
+\frac{-i}{q^2 - m_h^2} \left[g_{\alpha\beta} - \frac{q_{\alpha}q_{\beta}}{m_h^2}\right] 
+$$
+The Feynmann rule for the verteces is:
+$$
+\frac{2iM_W^2g_{\mu\nu}}{v}=i\frac{g^2v}{2}g_{\mu\nu}
+$$
+
 :::
+:::
+We obtain a contribution of:
+$$
+i\mathcal{M_h} = -i\frac{i}{v^2}\left(\frac{s^2}{s-m_h^2} + \frac{t^2}{t-m_h^2}\right)
+$$
+
 ::::
 
+---
+
+- Taylor expanding for $s,t >> m_h^2$ we have:
+$$
+i\mathcal{M_h} \simeq -i\frac{1}{v^2}(s+t+2m_h^2)
+$$
+
+- Summing the contributions, we see the energy dependent term cancel:
+$$
+i\mathcal{M} \simeq -i\frac{1}{v^2}(2m_h^2) 
+$$
+
+- Using previous relation for a_0:
+$$
+a_0(s) = \frac{1}{32 \pi} \int_{-1}^{1} d(\cos \theta) \, \mathcal{M}(s, \cos \theta)
+$$
+$$
+a_0 \simeq -\frac{1}{16\pi v^2}(2m_h^2) 
+$$
+
+- Applying $|\Re{a_0}| < 1/2$ we finally obtain an upper bound on the Higgs boson mass.
+$$
+m_h^2 \leq 4\pi v^2 \simeq (870 GeV)^2
+$$
+
+::: {#border-container .fragment}
+<div class="highlight-border3"></div>
+
+:::
+
+<style>
+
+.highlight-border3 {
+  border: 3px solid #b491f4;
+  border-radius: 5px;
+  padding: 10px;
+  width: 400px;
+  height: 60px;
+  position: absolute;
+  top: 675px;
+  left: 340px;
+  box-sizing: border-box;
+}
+</style>
 
 
+## Conclusions
+### Sumamry
 
-
-
-- These terms generate mass terms for quarks when $\Phi$ acquires a VEV.
-
-
-# Measurements
-
-## Slide 11: Importance of Mass Generation without Violating Gauge Invariance
-### Importance of Gauge-Invariant Mass Generation
-- The Higgs mechanism ensures gauge invariance while giving mass to particles.
-- Yukawa couplings generate fermion masses without violating gauge symmetry.
-- This avoids flavor-changing neutral currents, ensuring the model's consistency with observed physics.
-
-
-
-## Complex Number Plot
-### Last slide
+- The Abelian Higgs Model
+- Weinberg-Salam Model
+- Fermion Masses
+- Perturbative unitarity
+- Upper bound Higgs mass

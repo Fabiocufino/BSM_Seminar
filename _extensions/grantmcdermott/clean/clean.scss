@@ -100,7 +100,7 @@ $selection-bg: #26351c !default;
 }
 
 .reveal .slides section h1 {
-  font-size: 2em !important; /* Adjust the font size and use !important to override other styles */
+  font-size: 1.8em !important; /* Adjust the font size and use !important to override other styles */
   border-bottom: 2px solid $accent; /* Add a horizontal line and use !important */
   padding-bottom: 15px !important; /* Adjust space between text and line and use !important */
 }
@@ -133,7 +133,7 @@ $selection-bg: #26351c !default;
 }
 
 .fg {
-  color: $accent3;
+  color: $accent;
 }
 
 .bg {

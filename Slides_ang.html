@@ -10,8 +10,8 @@
 <link href="Slides_ang_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.554">
 
-  <meta name="author" content="Fabio Cufino">
-  <meta name="dcterms.date" content="2024-06-23">
+  <meta name="author" content="Fabio Cufino &amp; Angelo Arisi">
+  <meta name="dcterms.date" content="2024-06-26">
   <title>Higgs unitarity constraints</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -333,7 +333,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Fabio Cufino 
+Fabio Cufino &amp; Angelo Arisi 
 </div>
         <p class="quarto-title-affiliation">
             TU Dortmund University
@@ -341,98 +341,445 @@ Fabio Cufino
     </div>
 </div>
 
-  <p class="date">June 23, 2024</p>
+  <p class="date">June 26, 2024</p>
 </section>
-<section>
-<section id="da-qua-puoi-scrivere" class="title-slide slide level1 center">
-<h1>Da qua puoi scrivere</h1>
-
+<section id="bounds-from-precision-measurements" class="slide level2">
+<h2>Bounds from precision measurements</h2>
+<h3 id="the-mass-of-the-w">The mass of the W</h3>
 </section>
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
-<h3 id="content"><strong>Content:</strong></h3>
+<section id="perturbative-unitarity" class="slide level2">
+<h2>Perturbative Unitarity</h2>
+<h3 id="unitarity"><strong>Unitarity</strong></h3>
 <ul>
-<li>Overview of the Higgs boson discovery and its implications for the Standard Model (SM).</li>
-<li>Discussion on Effective Field Theory (EFT) in Higgs physics.</li>
-<li>Topics covered: Higgs production and decay, precision electroweak measurements, future of Higgs physics.</li>
+<li>Arises from quantum mechanical scattering theory.</li>
+<li>It is based on the unitarity bound on scattering amplitudes -&gt; Conservation of probability.</li>
 </ul>
-</section>
-<section id="simplified-case" class="slide level2">
-<h2>Simplified Case</h2>
-<h3 id="abelian-higgs-model">Abelian Higgs Model</h3>
-<ul>
-<li>Discuss a U(1) gauge theory with a single gauge field (photon).</li>
-<li>Lagrangian:</li>
-</ul>
-<p><span class="math display">\[
-  L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}
-\]</span></p>
-<p>where <span class="math display">\[
-  F_{\mu\nu} = \partial_\nu A_\mu - \partial_\mu A_\nu
-\]</span></p>
-<!-- <div style="height: 40px;"></div> -->
 <div class="fragment">
 <!-- -->
-<h3 id="here-a-fragment">Here a fragment</h3>
+<h3 id="why-perturbative"><strong>Why “Perturbative”?</strong></h3>
 <ul>
-<li>Appears after</li>
+<li>If the matrix element at whatever perturbative order does not satisfy unitarity condition, higher order contribution must cancel out remaining terms.</li>
+<li>Insights of new physics.</li>
+</ul>
+</div>
+<div class="fragment">
+<!-- -->
+<h3 id="application"><strong>Application</strong></h3>
+<ul>
+<li>Tool to understand the theoretical structure of spontanuosly broken gauge theories.</li>
+<li><strong>Specific to our case</strong>: Estimate an upper bound on the Higgs boson mass.</li>
 </ul>
 </div>
 </section>
-<section id="this-is-an-image" class="slide level2">
-<h2>This is an image</h2>
-<h3 id="a-good-one">A good one</h3>
-<div style="display: flex; width: 80%; height: auto; margin: auto;">
-<figure style="text-align: center;">
-<figcaption style="color: gray; font-size: 18px; margin-top: -15px;">
-[Here the source]
-</figcaption>
-<img src="Images/icecube.png" style="max-width: 100%; height: 70%;">
-</figure>
-</div>
-</section>
-<section id="columns" class="slide level2">
-<h2>Columns</h2>
-<h3 id="columns-the-one-in-the-center-is-empty">3 columns, the one in the center is empty</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div style="height: 55px;">
+<section id="computation-of-the-unitarity-bound" class="slide level2">
+<h2>Computation of the unitarity bound</h2>
+<h3 id="qm-scattering-theory">QM scattering theory</h3>
+<ul>
+<li><p>Let’s start from an incoming plane wave propagating in the z direction: <span class="math display">\[
+\psi(\vec{r}) = e^{ik \cdot \vec{r}} = e^{ikr\cos\theta}
+\]</span></p></li>
+<li><p>rewritten in terms of the spherical Bessel functions and the Legendre polynomials: <span class="math display">\[
+\psi(\vec{r}) = \sum_{l=0}^{\infty}(2l +1)(i)^l j_l(kr)P_l(\cos\theta)
+\]</span></p></li>
+</ul>
+<div style="margin-top:-30px;">
 
 </div>
-<div style="display: flex; width: 80%; height: auto; margin: auto;">
+<div class="fragment">
+<ul>
+<li>for <span class="math inline">\(kr&gt;&gt;l\)</span> this approximation holds: <span class="math display">\[
+\psi(\vec{r}) \simeq \frac{i}{2k}\sum_{l=0}^{\infty}(2l +1)(i)^l \left[\frac{e^{-i(kr - l\pi/2)}}{r} - \frac{e^{+i(kr - l\pi/2)}}{r} \right]P_l(\cos\theta)
+\]</span></li>
+<li>Let’s add the function <span class="math inline">\(S_l(k)\)</span> which describes the action of the scattering center. It can only modify the outgoing wave.</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<p><span class="math display">\[
+  \psi(\vec{r}) \simeq \frac{i}{2k}\sum_{l=0}^{\infty}(2l +1)(i)^l \left[\frac{e^{-i(kr - l\pi/2)}}{r} - S_l(k)\frac{e^{+i(kr - l\pi/2)}}{r} \right]P_l(\cos\theta)
+\]</span></p>
+<ul>
+<li>where <span class="math inline">\(|S_l(k) \leq 1|\)</span>. This is the source of the <strong>unitarity bound</strong>. After manipulation:</li>
+</ul>
+<span class="math display">\[
+  \psi(\vec{r}) \simeq e^{ikr\cos\theta} + \left[\sum_{l=0}^{\infty}(2l +1)\frac{S_l(k)-1}{2ik}P_l(\cos\theta)\right]\frac{e^{ikr}}{r}
+\]</span>
+<div class="fragment">
+<ul>
+<li>calling:</li>
+</ul>
+<p><span class="math display">\[
+  f(\theta) = \frac{1}{k}\sum_{l=0}^{\infty}(2l +1)a_l(k)P_l(\cos\theta)
+\]</span></p>
+<p><span class="math display">\[
+  a_l(k) = \frac{S_l(k)-1}{2i}
+\]</span></p>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><span class="math display">\[\begin{align}
+|a_l| \leq 1
+\end{align}\]</span></p>
+</div><div class="column" style="width:33%;">
+<p><span class="math display">\[\begin{align}
+|\Re{a_l}| \leq 1/2
+\end{align}\]</span></p>
+</div><div class="column" style="width:33%;">
+<p><span class="math display">\[\begin{align}
+0 \leq |\Im{a_l}| \leq 1
+\end{align}\]</span></p>
+</div>
+</div>
+<div class="fragment">
+<div>
 <figure style="text-align: center;">
-<img src="Images/icecube.png" style="max-width: 100%; height: auto;">
+<img src="Images/unitary circle.jpeg" style="display: block; margin-left: auto; margin-right: auto; width: 70%;">
 <figcaption style="color: gray; font-size: 18px; margin-top: -15px;">
-[Here the source]
+[https://arxiv.org/abs/2207.01064]
+</figcaption>
+</figure>
+</div>
+</div>
+<div id="border-container" class="fragment">
+<div class="highlight-border1">
+
+</div>
+</div>
+<style>
+
+.highlight-border1 {
+  border: 3px solid #b491f4;
+  border-radius: 5px;
+  padding: 10px;
+  width: 180px;
+  height: 65px;
+  position: absolute;
+  top: 20px;
+  left: 430px;
+  box-sizing: border-box;
+}
+</style>
+</section>
+<section id="computation-of-the-unitarity-bound-1" class="slide level2">
+<h2>Computation of the unitarity bound</h2>
+<h3 id="translation-to-qft">Translation to QFT</h3>
+<ul>
+<li>From QM scattering theory we have <span class="math inline">\(\frac{d\sigma}{d\Omega} = |f(\theta)|^2\)</span> which we just computed: <span class="math display">\[
+|f(\theta)|^2 = |\frac{1}{k}\sum_{l=0}^{\infty}(2l +1)a_l(k)P_l(\cos\theta)|^2
+\]</span></li>
+<li>While in QFT the differential cross section for a two-to-two scattering the the CM frame is: <span class="math display">\[
+\left(\frac{d\sigma}{d\Omega}\right)_{CM} = \frac{|\mathcal{M}|^2}{64\pi^2 E^2_{CM}}
+\]</span> where the masses are take equal for simplicity. Equating the two in the case of <span class="math inline">\(E_{CM} \approx 2|\vec{p}|\)</span> we obtain: <span class="math display">\[
+\mathcal{M} = 16\pi \sum_{l=0}^{\infty}(2l +1)a_l(|\vec{p}|)P_l(\cos\theta)
+\]</span></li>
+</ul>
+</section>
+<section id="longitudinal-vector-bosons" class="slide level2">
+<h2>Longitudinal vector bosons</h2>
+<h3 id="energy-dependence">Energy dependence</h3>
+<ul>
+<li>After EWSB gauge bosons acquire a mass.</li>
+<li>Equivalent of acquiring a <strong>longitudinal polarization</strong>.</li>
+</ul>
+<div style="margin-bottom: -10px;">
+
+</div>
+<p><!-- Questo div può essere rimosso se non necessario --></p>
+<div class="fragment" style="margin-top: -20px; line-height: 1.2;">
+
+</div>
+<p style="margin-bottom: 5px;">
+For a vector with a momentum on the z-axis <span class="math inline">\(p^{\mu} = (E,0,0,p_z)\)</span>:
+</p>
+<p style="margin-bottom: 5px;">
+</p><ul>
+<li>Transverse polarization:
+<p></p></li>
+</ul>
+<div style="margin-top: -10px;">
+<span class="math display">\[\begin{array}{cc}
+  \epsilon_{T1}=(0,1,0,0) &amp; \epsilon_{T2}=(0,0,1,0)
+\end{array}\]</span>
+</div>
+<p style="margin-top: -10px; margin-bottom: 5px;">
+No energy dependence.
+</p>
+<p style="margin-top: -10px; margin-bottom: 5px;">
+</p><ul>
+<li>Longitudinal polarization:
+<p></p></li>
+</ul>
+<div style="margin-top: -10px;">
+<p><span class="math display">\[
+\epsilon_{L} = \frac{1}{m}(p_z,0,0,E)
+\]</span></p>
+</div>
+<p style="margin-top: -10px;">
+Energy dependence.
+</p>
+</section>
+<section id="longitudinal-vector-boson-scattering" class="slide level2">
+<h2>Longitudinal vector boson scattering</h2>
+<h3 id="point-diagram-w_lw-_l-rightarrow-w_lw-_l">1) 4 point diagram <span class="math inline">\(W^+_LW^-_L \rightarrow W^+_LW^-_L\)</span></h3>
+<style>
+  /* Specific styling for reducing spacing */
+  .reduce-space {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.1 !important; /* Adjust line-height for tighter spacing */
+  }
+  .reduce-space p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .reduce-space div {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .reduce-space .formula-container {
+    margin-top: -10px !important; /* Negative margin to reduce space further */
+  }
+</style>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div>
+<figure style="text-align: center;">
+<img src="Images/4point.jpeg" style="max-width: 100%; height: auto;">
+<figcaption style="color: gray; font-size: 18px; margin-top: -15px;">
+[https://arxiv.org/abs/2207.01064]
 </figcaption>
 </figure>
 </div>
 <div style="font-size: smaller;">
-<p>Here a text that is smaller</p>
+<p>The vertex is: <span class="math inline">\(ig^2(2g_{\mu\sigma}g_{\nu\rho} - g_{\mu\nu}g_{\rho\sigma} - g_{\mu\rho}g_{\nu\sigma})\)</span></p>
 </div>
-</div><div class="column" style="width:5%;">
+</div><div class="column reduce-space" style="width:60%;">
+<p>
+The energy-momentum 4 vectors:
+</p>
+<div class="formula-container">
+<span class="math display">\[\begin{array}{cc}
+    p_+=(E,0,0,p) &amp; k_+=(E,p\sin\theta,0,p\cos\theta)\\
+    p_-=(E,0,0,-p) &amp; k_-=(E,-p\sin\theta,0,-p\cos\theta)
+  \end{array}\]</span>
+</div>
+<div class="fragment">
+<p>
+The longitudinal polarization vectors:
+</p>
+<span class="math display">\[\begin{aligned}
+    &amp;e_l(p_+)=\left(\frac{p}{M_W},0,0,\frac{E}{M_W}\right) \\
+    &amp;e_l(k_+)=\left(\frac{p}{M_W},\frac{E}{M_W}\sin\theta,0,\frac{E}{M_W}\cos\theta\right) \\
+    &amp;e_l(p_-)=\left(\frac{p}{M_W},0,0,-\frac{E}{M_W}\right) \\
+    &amp;e_l(k_-)=\left(\frac{p}{M_W},-\frac{E}{M_W}\sin\theta,0,-\frac{E}{M_W}\cos\theta\right) \\
+  \end{aligned}\]</span>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
 
-</div><div class="column" style="width:40%;">
-<p><strong>Bold text</strong>:</p>
-<div>
 <ul>
-<li class="fragment">first</li>
-<li class="fragment">second</li>
-<li class="fragment">third</li>
+<li>After calculation the matrix element has a <span class="math inline">\(\frac{E^4}{M_W^4}\)</span> dependence.</li>
+<li>The high energy limit:</li>
+</ul>
+<p><span class="math display">\[
+i\mathcal{M} \approx ig^2\frac{E^4}{M_W^4}
+\]</span></p>
+<p>violates unitarity for high energies.</p>
+<ul>
+<li>But we still have to add tree level diagrams.</li>
+</ul>
+</section>
+<section id="longitudinal-vector-boson-scattering-1" class="slide level2">
+<h2>Longitudinal vector boson scattering</h2>
+<h3 id="adding-tree-level-contribution">2) Adding tree level contribution</h3>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div style="display: flex; width: 80%; height: auto; margin: auto;">
+<figure style="text-align: center;">
+<img src="Images/yZ_contribution.jpeg" style="max-width: 100%; height: 250px;">
+<figcaption style="color: gray; font-size: 18px; margin-top: -15px;">
+[https://arxiv.org/abs/2207.01064]
+</figcaption>
+</figure>
+</div>
+<div style="font-size: smaller;">
+<p>The Feynmann rule for the vertex is:</p>
+<p><span class="math display">\[
+i
+\left\{
+\begin{array}{ll}
+  e \\
+  g\cos\theta_W \\
+\end{array}
+\right\}
+[g_{\mu\nu}(-p_- + p_+)_{\alpha} + g_{\mu\alpha}(q + p_+)_{\nu} + g_{\nu\alpha}(-q - p_-)_{\mu}]
+\]</span></p>
+</div>
+</div><div class="column" style="width:40%;">
+<div>
+<p>The propagators are:</p>
+<span class="math display">\[\begin{array}{cc}
+   \frac{-i}{q^2 - M_Z^2} \left[g_{\alpha\beta} - \frac{q_{\alpha}q_{\beta}}{M_Z^2}\right]  \quad \text{and} \quad &amp; \frac{-ig_{\alpha\beta}}{q^2}\\
+\end{array}\]</span>
+<ul>
+<li class="fragment">Every of the four diagrams grows with <span class="math inline">\(\frac{E^4}{M_W^4}\)</span></li>
+<li class="fragment">But summing them together they all cancel away.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="fragment">
+<ul>
+<li>The matrix element becomes: <span class="math display">\[
+i\mathcal{M}=i\frac{g^2}{4M_W^2}\left[s+t+\mathcal{O(M_W^2)}\right]
+\]</span></li>
+</ul>
+</div>
+</div><div class="column" style="width:40%;">
+<div class="fragment">
+<ul>
+<li>There is still an <span class="math inline">\(\frac{E^2}{M_W^2}\)</span> dependece left.</li>
 </ul>
 </div>
 </div>
 </div>
 </section>
-<section id="complex-number-plot" class="slide level2">
-<h2>Complex Number Plot</h2>
-<h3 id="last-slide">Last slide</h3>
+<section id="upper-bound-on-the-energy-scale" class="slide level2">
+<h2>Upper bound on the energy scale</h2>
+<h3 id="using-perturbative-unitarity">Using perturbative unitarity</h3>
+<ul>
+<li><p>We can get an estimate on the energy at which perturbative unitarity is violated.</p></li>
+<li><p>The relation obtained before on <span class="math inline">\(\mathcal{M}\)</span>:</p></li>
+</ul>
+<p><span class="math display">\[
+\mathcal{M}=16\pi\sum_{J=0}^{\infty}(2J+1)a_JP_J(\cos\theta)
+\]</span> <span class="math display">\[
+\int_{-1}^{1}P_J(\cos \theta)d(\cos \theta) \mathcal{M} = 16\pi\sum_{l=0}^{\infty}(2J+1)a_J\int_{-1}^{1}P_J(\cos \theta)P_J(\cos \theta)d(\cos \theta)
+\]</span></p>
+<ul>
+<li>The ortogonality relation of the Legendre polynomial goes:</li>
+</ul>
+<p><span class="math display">\[
+\int_{-1}^{1} d(\cos \theta) \, P_J(\cos \theta) P_{J'}(\cos \theta) = \frac{2}{2J + 1} \delta_{JJ'}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>We are able to get a definition on the Jth partial wave amplitude: <span class="math display">\[
+a_J(s) = \frac{1}{32 \pi} \int_{-1}^{1} d(\cos \theta) \, \mathcal{M}(s, \cos \theta) P_J(\cos \theta)
+\]</span> <span class="math display">\[
+a_0(s) = \frac{1}{32 \pi} \int_{-1}^{1} d(\cos \theta) \, \mathcal{M}(s, \cos \theta)
+\]</span></li>
+<li>We have the relations:
+<span class="math display">\[\begin{array}
+i\mathcal{M} \approx i\frac{g^2}{4M_W^2}\left[s+t\right] \quad \text{               } \quad &amp;  t = \frac{s}{2}(\cos\theta - 1)
+\end{array}\]</span></li>
+<li>Plugging them in and applying the bound <span class="math inline">\(|\Re{a_0}| \leq 1/2\)</span>:</li>
+</ul>
+<span class="math display">\[\begin{array}{cc}
+   a_0 \approx g^2\frac{s}{64\pi M_W^2} \leq 1/2 \quad \text{so} \quad &amp; s \leq \frac{1}{g^2}32\pi M_W^2 \approx (1200GeV)^2\\
+\end{array}\]</span>
+<ul>
+<li>The theory breaks down at the TeV scale.</li>
+</ul>
+<div id="border-container" class="fragment">
+<div class="highlight-border2">
+
+</div>
+</div>
+<style>
+
+.highlight-border2 {
+  border: 3px solid #b491f4;
+  border-radius: 5px;
+  padding: 10px;
+  width: 384px;
+  height: 65px;
+  position: absolute;
+  top: 500px;
+  left: 515px;
+  box-sizing: border-box;
+}
+</style>
+</section>
+<section id="longitudinal-vector-boson-scattering-2" class="slide level2">
+<h2>Longitudinal vector boson scattering</h2>
+<h3 id="adding-tree-level-higgs-contribution">3) Adding tree level Higgs contribution</h3>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div>
+<figure style="text-align: center;">
+<img src="Images/higgs_contribution.jpeg" style="max-width: 100%; height: 300px;">
+<figcaption style="color: gray; font-size: 18px; margin-top: -15px;">
+[https://arxiv.org/abs/2207.01064]
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<div>
+<p>The propagator is: <span class="math display">\[
+\frac{-i}{q^2 - m_h^2} \left[g_{\alpha\beta} - \frac{q_{\alpha}q_{\beta}}{m_h^2}\right]
+\]</span> The Feynmann rule for the verteces is: <span class="math display">\[
+\frac{2iM_W^2g_{\mu\nu}}{v}=i\frac{g^2v}{2}g_{\mu\nu}
+\]</span></p>
+</div>
+</div><p>We obtain a contribution of: <span class="math display">\[
+i\mathcal{M_h} = -i\frac{i}{v^2}\left(\frac{s^2}{s-m_h^2} + \frac{t^2}{t-m_h^2}\right)
+\]</span></p>
+</div>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><p>Taylor expanding for <span class="math inline">\(s,t &gt;&gt; m_h^2\)</span> we have: <span class="math display">\[
+i\mathcal{M_h} \simeq -i\frac{1}{v^2}(s+t+2m_h^2)
+\]</span></p></li>
+<li><p>Summing the contributions, we see the energy dependent term cancel: <span class="math display">\[
+i\mathcal{M} \simeq -i\frac{1}{v^2}(2m_h^2)
+\]</span></p></li>
+<li><p>Using previous relation for a_0: <span class="math display">\[
+a_0(s) = \frac{1}{32 \pi} \int_{-1}^{1} d(\cos \theta) \, \mathcal{M}(s, \cos \theta)
+\]</span> <span class="math display">\[
+a_0 \simeq -\frac{1}{16\pi v^2}(2m_h^2)
+\]</span></p></li>
+<li><p>Applying <span class="math inline">\(|\Re{a_0}| &lt; 1/2\)</span> we finally obtain an upper bound on the Higgs boson mass. <span class="math display">\[
+m_h^2 \leq 4\pi v^2 \simeq (870 GeV)^2
+\]</span></p></li>
+</ul>
+<div id="border-container" class="fragment">
+<div class="highlight-border3">
+
+</div>
+</div>
+<style>
+
+.highlight-border3 {
+  border: 3px solid #b491f4;
+  border-radius: 5px;
+  padding: 10px;
+  width: 400px;
+  height: 60px;
+  position: absolute;
+  top: 675px;
+  left: 340px;
+  box-sizing: border-box;
+}
+</style>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 

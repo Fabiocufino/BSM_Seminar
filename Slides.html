@@ -10,9 +10,9 @@
 <link href="Slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.554">
 
-  <meta name="author" content="Fabio Cufino">
-  <meta name="dcterms.date" content="2024-06-24">
-  <title>Higgs unitarity constraints</title>
+  <meta name="author" content="Fabio Cufino - Angelo Arisi">
+  <meta name="dcterms.date" content="2024-06-26">
+  <title>Higgs mechanism &amp; unitarity constraints</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,13 +327,13 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Higgs unitarity constraints</h1>
-  <p class="subtitle">Some subtitle that I still don’t know</p>
+  <h1 class="title">Higgs mechanism &amp; unitarity constraints</h1>
+  <p class="subtitle">Higgs mechanism and upper bound on the Higgs mass</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Fabio Cufino 
+Fabio Cufino - Angelo Arisi 
 </div>
         <p class="quarto-title-affiliation">
             TU Dortmund University
@@ -341,21 +341,7 @@ Fabio Cufino
     </div>
 </div>
 
-  <p class="date">June 24, 2024</p>
-</section>
-<section>
-<section id="introduction" class="title-slide slide level1 center">
-<h1>Introduction</h1>
-
-</section>
-<section id="introduction-1" class="slide level2">
-<h2>Introduction</h2>
-<h3 id="content"><strong>Content:</strong></h3>
-<ul>
-<li>Overview of the Higgs boson discovery and its implications for the Standard Model (SM).</li>
-<li>Discussion on Effective Field Theory (EFT) in Higgs physics.</li>
-<li>Topics covered: Higgs production and decay, precision electroweak measurements, future of Higgs physics.</li>
-</ul>
+  <p class="date">June 26, 2024</p>
 </section>
 <section id="the-higgs-mechanism" class="slide level2">
 <h2>The Higgs Mechanism</h2>
@@ -383,7 +369,7 @@ Fabio Cufino
 <h3 id="extension-of-the-model">Extension of the model</h3>
 <ul>
 <li>Single complex scalar field <span class="math inline">\(\phi\)</span> that couples to the photon <span class="math display">\[
-L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + |D_\mu \phi|^2 - V(\phi)
+\;\;\;\;\;\;\;\; \quad\quad\quad\quad\quad \mathbfcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + |D_\mu \phi|^2 - V(\phi)
 \]</span>
 <ul>
 <li><span class="math inline">\(D_\mu = \partial_\mu - ieA_\mu\)</span></li>
@@ -397,10 +383,10 @@ L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + |D_\mu \phi|^2 - V(\phi)
 <li><p>Local gauge transformations: <span class="math inline">\(\;\;  A_\mu \rightarrow A_\mu - \partial_\mu \eta(x), \;\;\;\; \phi \rightarrow e^{-ie\eta(x)} \phi\)</span></p></li>
 </ul>
 </section>
-<section id="the-scalar-potential" class="slide level2">
-<h2>The scalar potential</h2>
-<h3 id="different-solutions">Different solutions</h3>
-<p>The potenial has two diffenet forms:</p>
+<section id="the-scalar-potential-vphi" class="slide level2">
+<h2>The scalar potential <span class="math inline">\(V(\phi)\)</span></h2>
+<h3 id="spontaneus-symmetry-breaking">Spontaneus Symmetry Breaking</h3>
+<p>The potentfial has two diffenet forms:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div style="height: 35px;">
@@ -428,15 +414,12 @@ L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + |D_\mu \phi|^2 - V(\phi)
 <!-- ----  -->
 <div class="columns">
 <div class="column" style="width:50%;">
-<div style="margin-top: -10px;">
-
-</div>
 <ul>
 <li><span class="math inline">\(\mu^2 &lt; 0\)</span>: The vacuum state is <span class="math display">\[
   \langle \phi \rangle = \sqrt{-\frac{\mu^2}{2\lambda}} e^{i\theta} = \frac{v}{\sqrt{2}} e^{i\theta}
 \]</span>
 <ul>
-<li>Choise <span class="math inline">\(\theta = 0 \; \rightarrow \;\)</span> SSB</li>
+<li>Choise <span class="math inline">\(\theta = 0 \; \Longrightarrow \;\)</span> breaks the <em>global</em> <span class="math inline">\(U(1)\)</span> symmetry</li>
 </ul></li>
 </ul>
 </div><div class="column" style="width:15%;">
@@ -449,77 +432,174 @@ L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + |D_\mu \phi|^2 - V(\phi)
 </div>
 </div>
 </section>
-<section id="consequences-of-symmetry-breaking-in-the-abelian-model" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Consequences of Symmetry Breaking in the Abelian Model</h2>
+<section id="consequences-of-sb-in-the-abelian-model" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Consequences of SB in the Abelian Model</h2>
 <h3 id="consequences-of-symmetry-breaking">Consequences of Symmetry Breaking</h3>
 <ul>
-<li>It is convenient to rewrite <span class="math inline">\(\phi\)</span> as</li>
+<li><em>Perturbation theroy</em>: It is convenient to rewrite <span class="math inline">\(\phi\)</span></li>
 </ul>
+<div style="font-size:0.85em; text-align:center; margin-bottom: 10px;">
 <p><span class="math display">\[
   \phi \equiv \frac{1}{\sqrt{2}} e^{i \frac{\chi(x)}{v}} \left( v + h(x) \right)
 \]</span></p>
+</div>
 <p>Substitute <span class="math inline">\(\phi\)</span> into <span class="math inline">\(\mathcal{L}\)</span>:</p>
+<div style="font-size:0.85em; text-align:center; margin-bottom: 10px;">
 <p><span class="math display">\[
 \mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} + |D_\mu \phi|^2  - V(\phi)  
 \]</span></p>
+</div>
+<div style="height: 25px;">
+
+</div>
+<div style="font-size:0.75em; text-align:center; margin-bottom: 10px;">
 <p><span class="math display">\[
-\mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} - ev A_\mu \partial^\mu \chi + \frac{e^2 v^2}{2} A_\mu A^\mu + \frac{1}{2} \left( \partial_\mu h \partial^\mu h + 2\mu^2 h^2 \right) + \frac{1}{2} \left( \partial_\mu \chi \partial^\mu \chi \right ) + (h, \chi \text{inter})  
+  \mathcal{L} =  -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} + \left( \frac{v + h}{\sqrt{2}} \right)^2 \left[ -i \frac{\partial_\mu \chi}{v} + \frac{\partial_\mu h}{v + h} - ie A_\mu \right] \left[ i \frac{\partial_\mu \chi}{v} + \frac{\partial_\mu h}{v + h} + ie A_\mu \right] - \left( \frac{\mu^4}{\lambda} + \mu^2 h^2 + \frac{1}{2} \sqrt{\lambda} \mu h^3 + \frac{1}{16} \lambda h^4 \right)
 \]</span></p>
+</div>
 </section>
-<section id="slide-4-consequences-of-symmetry-breaking-in-the-abelian-model" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Slide 4: Consequences of Symmetry Breaking in the Abelian Model</h2>
+<section id="consequences-of-sb-in-the-abelian-model-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Consequences of SB in the Abelian Model</h2>
 <h3 id="consequences-of-symmetry-breaking-1">Consequences of Symmetry Breaking</h3>
+<div style="height: 25px;">
+
+</div>
+<div style="font-size:0.75em; text-align:center; margin-bottom: 10px;">
 <p><span class="math display">\[
-\mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} - ev A_\mu \partial^\mu \chi + \frac{e^2 v^2}{2} A_\mu A^\mu + \frac{1}{2} \left( \partial_\mu h \partial^\mu h + 2\mu^2 h^2 \right) + \frac{1}{2} \left( \partial_\mu \chi \partial^\mu \chi \right ) + (h, \chi \text{inter})  
+  \mathcal{L} =  -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} + \left( \frac{v + h}{\sqrt{2}} \right)^2 \left[ -i \frac{\partial_\mu \chi}{v} + \frac{\partial_\mu h}{v + h} - ie A_\mu \right] \left[ i \frac{\partial_\mu \chi}{v} + \frac{\partial_\mu h}{v + h} + ie A_\mu \right] - \left( \frac{\mu^4}{\lambda} + \mu^2 h^2 + \frac{1}{2} \sqrt{\lambda} \mu h^3 + \frac{1}{16} \lambda h^4 \right)
 \]</span></p>
+</div>
+<div style="height: 35px;">
+
+</div>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div style="font-size: smaller;">
 <ul>
-<li>When <span class="math inline">\(\mu^2 &lt; 0\)</span>, the <span class="fg">gauge field <span class="math inline">\(A_\mu\)</span> acquires a mass</span>:</li>
+<li>Terms involving only <span class="math inline">\(A_\mu\)</span>:</li>
 </ul>
+</div>
+<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
 <p><span class="math display">\[
-  M_A = ev
+  \mathcal{L} = -\frac{1}{4} F_{\mu\nu}^2 + \frac{1}{2} e^2 v^2 A_\mu^2 + \cdots
 \]</span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:54%;">
+<div style="height: 65px;">
+
+</div>
+<div style="font-size: smaller;">
+<p><span class="fg">Gauge field <span class="math inline">\(A_\mu\)</span> acquires a mass</span>: <span class="math inline">\(\;\; m_A = ev\)</span></p>
+</div>
+</div>
+</div>
+<!-- ------------HIGGS--- -->
+<div style="height: 35px;">
+
+</div>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div style="font-size: smaller;">
 <ul>
-<li>The physical Higgs field <span class="math inline">\(h\)</span> emerges with mass:</li>
+<li>Terms in the potential with <span class="math inline">\(h_\mu\)</span>:</li>
 </ul>
+</div>
+<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
 <p><span class="math display">\[
-  m_h^2 = -2\mu^2
+  -\frac{\mu^4}{\lambda} - \mu^2 h^2 - \frac{1}{2} \sqrt{\lambda} \mu h^3 - \frac{1}{16} \lambda h^4
 \]</span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:54%;">
+<div style="height: 65px;">
+
+</div>
+<div style="font-size: smaller;">
+<p>The Higgs field <span class="math inline">\(h\)</span> has a mass: <span class="math inline">\(\;\; m_h^2 = -2\mu^2\)</span></p>
+</div>
+</div>
+</div>
+<div style="height: 35px;">
+
+</div>
+<div style="font-size: smaller;">
 <ul>
-<li>The Goldstone boson <span class="math inline">\(\chi\)</span>: massles scalar field.</li>
+<li>The Goldstone boson <span class="math inline">\(\chi(x) \;\; \Longrightarrow \;\;\)</span> massles scalar field</li>
 </ul>
+</div>
 </section>
-<section id="gauge" class="slide level2">
-<h2>Gauge</h2>
-<h3 id="different-gauges">Different gauges</h3>
+<section id="lagrangian-spectrum" class="slide level2">
+<h2>Lagrangian spectrum</h2>
+<h3 id="decoupling-limit-unitary-gauge">Decoupling limit &amp; Unitary gauge</h3>
 <ul>
-<li><span class="math inline">\(\chi\)</span> can be removed by a gauge transformation, leaving a massive photon and a scalar Higgs field.</li>
+<li>Simplify things by decoupling <span class="math inline">\(\chi(x)\)</span> through the limit <span class="math inline">\(\mu, \lambda → \infty\)</span> with <span class="math inline">\(v\)</span> fixed</li>
+</ul>
+<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
+<p><span class="math display">\[
+  \mathcal{L} = -\frac{1}{4} F_{\mu\nu}F^{\mu\nu} + \frac{1}{2} m_A^2 \left( A_\mu + \frac{1}{e v} \partial_\mu \chi \right)^2
+\]</span></p>
+</div>
+<div style="margin-top: -20px;">
+
+</div>
+<ul>
+<li><span class="math inline">\(\mathcal{L}\)</span> content:
+<ul>
+<li>Gauge boson mass term</li>
+<li>Kinetic term for <span class="math inline">\(\chi(x)\)</span></li>
+<li>Kinetic mixing term <span class="math inline">\(A_\mu \partial_\mu \chi \; \Longrightarrow\)</span> removed through gauge-fixing</li>
+</ul></li>
+</ul>
+<div style="height: 35px;">
+
+</div>
+<ul>
+<li><strong>Unitary gauge</strong>:
+<div style="font-size:0.9em; text-align:center; margin-bottom: 20px;">
+<div style="margin-top: -20px;">
+
+</div>
+<p><span class="math display">\[
+A_\mu \rightarrow A_\mu' = A_\mu -  \frac{1}{e v} \partial_\mu \chi
+\]</span></p>
+</div>
+<ul>
+<li>Goldstone boson has been ‘eaten’ to give the photon mass.</li>
+</ul></li>
 </ul>
 </section>
 <section id="intermezzo" class="slide level2">
 <h2>Intermezzo</h2>
 <h3 id="hidden-symmetry">Hidden Symmetry</h3>
 <ul>
-<li>the vev brakes the U(1) global symmetry (explain what that means)</li>
-<li>The Lagrangian is now invariant</li>
-<li>New tranformation {phi, sigma}</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:35%;">
-<div style="height: 55px;">
+<li>The VEV breaks the global <span class="math inline">\(U(1)\)</span> symmetry: <span class="math inline">\(\;\;\;\; \phi(x) \rightarrow e^{i\theta} \phi(x)\)</span></li>
+<li>Parametrization
+<div style="margin-top: -30px;">
 
 </div>
-<ul>
-<li>changig tau means a rotation in the phi</li>
-<li>mass term not allowd becasue of linear symmetry</li>
-</ul>
 <div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
 <p><span class="math display">\[
-  \phi \equiv \frac{1}{\sqrt{2}} e^{i \frac{\textcolor[RGB]{100,0,200}{\chi(x)}}{v}} \left( v + h(x) \right)
+\phi \equiv \frac{1}{\sqrt{2}} e^{i \frac{\chi(x)}{v}} \left( v + h(x) \right)
 \]</span></p>
+</div></li>
+<li>The symmetry is not broken: <span class="math inline">\(\chi(x) \rightarrow \chi(x) + v \theta \;\)</span> and <span class="math inline">\(\; h(x) \rightarrow h(x)\)</span></li>
+</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="height: 45px;">
+
 </div>
-</div><div class="column" style="width:65%;">
+<p>Consequence:</p>
+<ul>
+<li>The shift forbids a mass term for <span class="math inline">\(\chi(x)\)</span></li>
+<li>Movement around the flat direction of the potential.</li>
+</ul>
+</div><div class="column" style="width:60%;">
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<div id="higgs-plot" style="width: 90%; height: 400px;">
+<div id="higgs-plot" style="width: 40%; height: 350px;">
 
 </div>
 <script>
@@ -581,16 +661,12 @@ L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + |D_\mu \phi|^2 - V(\phi)
 </div>
 </div>
 </section>
-<section id="gauge-1" class="slide level2">
-<h2>Gauge</h2>
-<h3 id="chosing-a-gauge">Chosing a gauge</h3>
-</section>
 <section id="introduction-to-the-weinberg-salam-model" class="slide level2">
 <h2>Introduction to the Weinberg-Salam Model</h2>
 <h3 id="weinberg-salam-model">Weinberg-Salam Model</h3>
 <ul>
 <li>Extends the Abelian Higgs model to an <span class="math inline">\(SU(2)_L×U(1)_Y\)</span> gauge theory.</li>
-<li>Introduces three <span class="math inline">\(SU(2)_L\)</span> gauge bosons <span class="math inline">\(W_\mu^I\)</span> (I = 1, 2, 3) and one <span class="math inline">\(U(1)_Y\)</span> gauge boson <span class="math inline">\(B_\mu\)</span>.</li>
+<li>Introduces three <span class="math inline">\(SU(2)_L\)</span> gauge bosons <span class="math inline">\(W_\mu^I\)</span> <span class="math inline">\((I = 1, 2, 3)\)</span> and one <span class="math inline">\(U(1)_Y\)</span> gauge boson <span class="math inline">\(B_\mu\)</span>.</li>
 <li>The kinetic enerigy terms: <span class="math display">\[
 L = -\frac{1}{4}W^I_{\mu\nu}W^{I\mu\nu} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu}
 \]</span>
@@ -598,183 +674,581 @@ L = -\frac{1}{4}W^I_{\mu\nu}W^{I\mu\nu} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu}
 <li><span class="math inline">\(W^I_{\mu\nu} = \partial_\nu W^I_\mu - \partial_\mu W^I_\nu + g \epsilon^{IJK} W^J_\mu W^K_\nu\)</span></li>
 <li><span class="math inline">\(B_{\mu\nu} = \partial_\nu B_\mu - \partial_\mu B_\nu\)</span></li>
 </ul></li>
+<li><span class="math inline">\(SU(2)_L\)</span> and <span class="math inline">\(U(1)_Y\)</span> coupling constants are <span class="math inline">\(g\)</span> and <span class="math inline">\(g'\)</span></li>
 </ul>
 </section>
-<section id="slide-6-scalar-potential-and-vev-in-weinberg-salam-model" class="slide level2">
-<h2>Slide 6: Scalar Potential and VEV in Weinberg-Salam Model</h2>
+<section id="scalar-potential-and-vev-in-weinberg-salam-model" class="slide level2">
+<h2>Scalar Potential and VEV in Weinberg-Salam Model</h2>
 <h3 id="scalar-potential-and-vev">Scalar Potential and VEV</h3>
 <ul>
-<li><p>Coupled to the gause fields he complex scalar <span class="math inline">\(SU(2)\)</span> doublet <span class="math inline">\(\Phi\)</span>: <span class="math display">\[
-\Phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}
-\]</span></p></li>
+<li><p>Coupled to the gause fields the complex scalar <span class="math inline">\(SU(2)\)</span> doublet <span class="math inline">\(\Phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}\)</span></p></li>
 <li><p>The scalar potential is similar to the Abelian model: <span class="math display">\[
 V(\Phi) = \mu^2 |\Phi^{\dagger} \Phi| + \lambda (|\Phi^{\dagger} \Phi|)^2
 \]</span></p></li>
-<li><p>For <span class="math inline">\(\mu^2 &lt; 0\)</span>, the vacuum expectation value (VEV) of <span class="math inline">\(\Phi\)</span> is: <span class="math display">\[
+<li><p>For <span class="math inline">\(\mu^2 &lt; 0\)</span>, the VEV of <span class="math inline">\(\Phi\)</span> is: <span class="math display">\[
 \langle \Phi \rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v \end{pmatrix}
 \]</span></p></li>
-<li><p><span class="math inline">\(g\)</span> and <span class="math inline">\(g'\)</span> are coupling constants,</p></li>
+<li><p>With this choice the electromagnetig charge</p></li>
 </ul>
+<p><span class="math display">\[
+  Q = \frac{(\tau_3 + Y)}{2} \;\;\; \text{with} \;\;\; Y_{\phi} = 1
+\]</span></p>
 </section>
-<section id="lagrangian" class="slide level2">
-<h2>LAgrangian</h2>
+<section id="scalar-contribution-to-the-lagrangian" class="slide level2">
+<h2>Scalar contribution to the Lagrangian</h2>
 <h3 id="scalar-contribution">Scalar contribution</h3>
-<ol type="1">
-<li><p><strong>Scalar Contribution to the Lagrangian</strong>: <span class="math display">\[
-\mathcal{L}_s = (D^\mu \Phi)^\dagger (D_\mu \Phi) - V(\Phi),
-\]</span></p></li>
-<li><p><strong>Covariant Derivative</strong>: <span class="math display">\[
-D_\mu = \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} B_\mu Y,
-\]</span> <span class="math inline">\(\tau\)</span> represents the Pauli matrices, <span class="math inline">\(W_\mu\)</span> and <span class="math inline">\(B_\mu\)</span> are the gauge fields, and <span class="math inline">\(Y\)</span> is the hypercharge.</p></li>
-<li><p><strong>Higgs Field in Unitary Gauge</strong>: <span class="math display">\[
-\Phi = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v + h \end{pmatrix},
-\]</span></p></li>
-</ol>
-</section>
-<section id="slide-7-gauge-boson-masses-calculation" class="slide level2">
-<h2>Slide 7: Gauge Boson Masses Calculation</h2>
-<h3 id="gauge-boson-masses">Gauge Boson Masses</h3>
+<ul>
+<li><p>Scalar Contribution to the Lagrangian: <span class="math inline">\(\;\;\; \mathcal{L}_s = (D^\mu \Phi)^\dagger (D_\mu \Phi) - V(\Phi)\)</span></p></li>
+<li><p>Covariant Derivative:</p>
+<div style="font-size:0.9em; text-align:center; margin-bottom: 20px;">
 <p><span class="math display">\[
-    M^2 \sim \frac{1}{2} (0, v) \left( \frac{1}{2} g \tau \cdot W_\mu + \frac{1}{2} g' B_\mu \right)^2 \begin{pmatrix} 0 \\ v \end{pmatrix}.
+D_\mu = \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} B_\mu Y
 \]</span></p>
-<ul>
-<li>The gauge bosons mix to form the physical gauge fields:</li>
-</ul>
-<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
-<p><span class="math display">\[
-  W^\pm_\mu = \frac{1}{\sqrt{2}}(W_\mu^1 \mp iW_\mu^2)
-  \]</span> <span class="math display">\[
-  Z_\mu = \frac{gW_\mu^3 - g'B_\mu}{\sqrt{g^2 + g'^2}} \equiv -sin\theta_W B_\mu + cos\theta_W W^3_\mu
-  \]</span> <span class="math display">\[
-  A_\mu = \frac{g'W_\mu^3 + gB_\mu}{\sqrt{g^2 + g'^2}} \equiv cos\theta_W B_\mu + sin\theta_W W^3_\mu
-  \]</span></p>
+</div></li>
+<li><p>In Unitary Gauge:</p>
+<div style="font-size:0.9em; text-align:center; margin-bottom: 20px;">
+<span class="math display">\[
+\Phi(x) = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v + h(x) \end{pmatrix},
+\]</span>
 </div>
-<p>The weak mixing angle <span class="math inline">\(\theta_W\)</span> is defined by: <span class="math inline">\(\sin \theta_W = \frac{g'}{\sqrt{g^2 + g'^2}}\)</span></p>
-<p>The relationship with the electromagnetic coupling <span class="math inline">\(e\)</span> is: <span class="math inline">\(e = g \sin \theta_W = g' \cos \theta_W\)</span></p>
-</section>
-<section id="slide-8-weak-mixing-angle-and-massless-photon" class="slide level2">
-<h2>Slide 8: Weak Mixing Angle and Massless Photon</h2>
-<h3 id="weak-mixing-angle-and-photon">Weak Mixing Angle and Photon</h3>
 <ul>
-<li>The masses of the gauge bosons are:</li>
-</ul>
-<p><span class="math display">\[
-  M_W = \frac{1}{2}gv, \quad M_Z = \frac{1}{2}\sqrt{g^2 + g'^2}v, \quad M_\gamma = 0
-\]</span></p>
-<hr>
-<h3 id="goldstone-bosons">Goldstone Bosons</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<!-- <div style="height: 55px;"></div> -->
-<ul>
-<li><span class="math inline">\(G = SU(2)_L \times U(1)_Y\)</span></li>
-<li><span class="math inline">\(H \subset G\)</span>: <span class="math inline">\(U(1)_{EM}\)</span></li>
-</ul>
-<p>Three Goldstoes bosons: <span class="math inline">\(\vec{\omega} = (\omega_\pm, z)\)</span></p>
-</div><div class="column" style="width:50%;">
-<p><span class="math inline">\(\Phi = \frac{1}{\sqrt{2}} e^{i \frac{\textcolor[RGB]{100,0,200}{\omega} \cdot \tau}{2v}} \begin{pmatrix} 0 \\ v + h \end{pmatrix}.\)</span></p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="fermions" class="title-slide slide level1 center">
-<h1>Fermions</h1>
-
-</section>
-<section id="fermions-1" class="slide level2">
-<h2>Fermions</h2>
-<h3 id="su2_l-doublets-for-fermions">SU(2)_L Doublets for Fermions</h3>
-<ul>
-<li>Experimentally W-boson couples with only LH fermions.
-<ul>
-<li><span class="math inline">\(SU(2)_L\)</span> doublets <span class="math display">\[
-L_L = \begin{pmatrix} \nu_L \\ e_L \end{pmatrix}
-\]</span></li>
+<li>no Goldstone bosons</li>
+<li>Higgs field remains with mass</li>
 </ul></li>
 </ul>
-<p>Hypercharge assignments:</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>For <span class="math inline">\(LH\)</span> leptons: <span class="math inline">\(Y_{L_L} = -1\)</span></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>For <span class="math inline">\(RH\)</span> leptons: <span class="math inline">\(Y_{e_R} = -2\)</span></li>
-</ul>
-</div>
+<div style="font-size:0.9em; text-align:center; margin-bottom: 20px;">
+<p><span class="math display">\[
+    M^2 \sim \frac{1}{2} (0, v) \left( \frac{1}{2} g \tau \cdot W_\mu + \frac{1}{2} g' B_\mu \right)^2 \begin{pmatrix} 0 \\ v \end{pmatrix}
+\]</span></p>
 </div>
 </section>
-<section id="slide-10-fermion-mass-generation-via-yukawa-coupling" class="slide level2">
-<h2>Slide 10: Fermion Mass Generation via Yukawa Coupling</h2>
-<h3 id="fermion-mass-generation">Fermion Mass Generation</h3>
-<p>Leptons can be coupled in a gauge invariant manner to the <span class="math inline">\(SU(2)_L × U(1)_Y\)</span> gauge fields</p>
-<p><span class="math display">\[
-  \mathcal{L}_{\text{lepton}} = i \bar{e}_R \gamma^\mu \left( \partial_\mu + i \frac{g'}{2} Y_e B_\mu \right) e_R + i \bar{L}_L \gamma^\mu \left( \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} Y_L B_\mu \right) L_L
-\]</span></p>
+<section id="weak-mixing-angle-and-massless-photon" class="slide level2">
+<h2>Weak Mixing Angle and Massless Photon</h2>
+<h3 id="gauge-boson-masses">Gauge Boson Masses</h3>
 <ul>
-<li>A fermionic mass term is not allowed: gauge invariance forbidden. <span class="math display">\[
-\mathcal{L}_m = -m \bar{\psi} \psi = -m (\bar{\psi}_L \psi_R + \bar{\psi}_R \psi_L)
-\]</span></li>
+<li>The physical gauge fields are <span class="math inline">\(W^\pm\)</span>, <span class="math inline">\(Z\)</span> and <span class="math inline">\(\gamma\)</span></li>
 </ul>
-<!-- 
-  - For left-handed quarks: $Y_{Q_L} = \frac{1}{3}$
-  - For right-handed up quark: $Y_{u_R} = \frac{4}{3}$
-  - For right-handed down quark: $Y_{d_R} = -\frac{2}{3}$ -->
+<div style="font-size:0.85em; text-align:center; margin-top: -20px;">
+<p><span class="math display">\[\begin{align*}
+  W^\pm_\mu &amp;= \frac{1}{\sqrt{2}} (W^1_\mu \mp i W^2_\mu) \\[10pt]
+  Z^\mu &amp;= \frac{-g'B_\mu + g W^3_\mu}{\sqrt{g^2 + g'^2}} \equiv -\sin \theta_W B_\mu + \cos \theta_W W^3_\mu \\[10pt]
+  A^\mu &amp;= \frac{g B_\mu + g' W^3_\mu}{\sqrt{g^2 + g'^2}} \equiv \cos \theta_W B_\mu + \sin \theta_W W^3_\mu.
+\end{align*}\]</span></p>
+</div>
 <ul>
-<li>The Higgs boson, however, can couple in a gauge invariant fashion to the down quarks,</li>
+<li><p>The weak mixing angle <span class="math inline">\(\theta_W\)</span> is defined by <span class="math inline">\(\sin \theta_W = \frac{g'}{\sqrt{g^2 + g'^2}}\)</span></p></li>
+<li><p>The masses of the gauge bosons are:</p></li>
+</ul>
+<p><span class="math display">\[
+  M_W^2 = \frac{1}{4}g^2v^2 \quad \;\;\; M_Z^2 = \frac{1}{4}(g^2 + g'^2)v^2 \quad \;\;\; M_\gamma^2 = 0
+\]</span></p>
+</section>
+<section id="higgs-and-fermions" class="slide level2">
+<h2>Higgs and Fermions</h2>
+<h3 id="lepton-masses">Lepton masses</h3>
+<ul>
+<li>Different transformation for <span class="math inline">\(LH\)</span> (<span class="math inline">\(SU(2)\)</span> doublets) and <span class="math inline">\(RH\)</span> (<span class="math inline">\(SU(2)\)</span> singlets) chiral states.</li>
+<li>Fermion mass term in Lagrangian: <span class="math display">\[
+  -m\bar{\psi}\psi = -m \left( \bar{\psi}_R \psi_L + \bar{\psi}_L \psi_R \right)
+  \]</span>
+<ul>
+<li>Does not respect <span class="math inline">\(SU(2)_L\)</span> <span class="math inline">\(\times\)</span> <span class="math inline">\(U(1)_Y\)</span> gauge symmetry.</li>
+</ul></li>
+<li><span class="math inline">\(SU(2)\)</span> local Gauge Transformation:
+<ul>
+<li>Higgs mechanism <span class="math inline">\(\phi(x)\)</span> (<span class="math inline">\(SU(2)\)</span> doublet): <span class="math inline">\(\;\; \phi' = \left( I + ig_W \epsilon(x) \cdot \mathbf{T} \right)\phi\)</span></li>
+<li><span class="math inline">\(LH\)</span> doublet of fermion fields: <span class="math inline">\(\;\;  \bar{L}' = \bar{L}\left(I - ig_W \epsilon(x) \cdot \mathbf{T} \right)\)</span></li>
+</ul></li>
 </ul>
 </section>
-<section id="slide-10-fermion-mass-generation-via-yukawa-coupling-1" class="slide level2">
-<h2>Slide 10: Fermion Mass Generation via Yukawa Coupling</h2>
-<h3 id="fermion-mass-generation-1">Fermion Mass Generation</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="higgs-and-fermions-1" class="slide level2">
+<h2>Higgs and Fermions</h2>
+<h3 id="leptons-and-up-type-quarks-masses">Leptons and up-type quarks masses</h3>
 <ul>
-<li>For down-type quarks:</li>
+<li>Combination <span class="math inline">\(\bar{L} \phi\)</span> is invariant under <span class="math inline">\(SU(2)_L\)</span> gauge transformations.</li>
+<li>Combining with a <span class="math inline">\(RH\)</span> singlet <span class="math inline">\(\;\Longrightarrow \;\)</span> <span class="math inline">\(\bar{L}\phi R\)</span> is invariant under <span class="math inline">\(SU(2)_L\)</span> and <span class="math inline">\(U(1)_Y\)</span> gauge transformations.
+<ul>
+<li>Lagrangian term: <span class="math inline">\(-g_f(\bar{L} \phi R + \bar{R} \phi^\dagger L)\)</span></li>
+</ul></li>
+</ul>
+<p><strong>Electron Example:</strong></p>
+<ul>
+<li>For the <span class="math inline">\(SU(2)_L\)</span> doublet containing the electron:</li>
 </ul>
 <p><span class="math display">\[
-  L_d = -Y_d \bar{Q}_L \Phi d_R + \text{h.c.}
-\]</span></p>
+    \;\;\; \mathcal{L}_e  = -g_e \left[ \begin{pmatrix} \bar{\nu}_e &amp; \bar{e} \end{pmatrix}_L \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix} e_R + \bar{e}_R \begin{pmatrix} \phi^{+*} &amp; \phi^{0*} \end{pmatrix} \begin{pmatrix} \nu_e \\ e \end{pmatrix}_L \right] \\
+  \]</span></p>
+<p><span class="math display">\[
+  \mathcal{L}_e  = -\frac{g_e v}{\sqrt{2}} (\bar{e}_L e_R + \bar{e}_R e_L) - \frac{g_e}{\sqrt{2}} h (\bar{e}_L e_R + \bar{e}_R e_L)
+  \]</span></p>
+</section>
+<section id="higgs-and-fermions-2" class="slide level2">
+<h2>Higgs and Fermions</h2>
+<h3 id="down-type-quarks-masses">down-type quarks masses</h3>
 <ul>
-<li>mass term</li>
+<li>Yukawa coupling <span class="math inline">\(g_e\)</span> is chosen to match observed electron mass: <span class="math display">\[
+  g_e = \sqrt{2} \frac{m_e}{v}
+  \]</span></li>
+</ul>
+<p><strong>Problem</strong>: Non-zero VEV is in the lower (neutral) component of the Higgs doublet.</p>
+<ul>
+<li><p><span class="math inline">\((\bar{L}\phi R + \bar{R}\phi^{\dagger}L)\)</span> generate <span class="math inline">\(m\)</span> only for lower component of an <span class="math inline">\(SU(2)_L\)</span> doublet.</p></li>
+<li><p>Achieved by constructing the conjugate doublet <span class="math inline">\(\;\; \phi_c \equiv i \tau_2 \phi^* = \begin{pmatrix} \phi^0 \\ -\phi^- \end{pmatrix}\)</span></p>
+<ul>
+<li>A gauge invariant mass term can be constructed from <span class="math inline">\((\bar{L}\phi_c R + \bar{R}\phi^{\dagger}_c L)\)</span></li>
+</ul></li>
 </ul>
 <p><span class="math display">\[
-  Y_d = \frac{m_d \sqrt{2}}{v}.
+   \mathcal{L}_u = -\frac{g_u v}{\sqrt{2}} (\bar{u}_L u_R + \bar{u}_R u_L) - \frac{g_u}{\sqrt{2}} h (\bar{u}_L u_R + \bar{u}_R u_L)
 \]</span></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li><p>For up-type quarks: <span class="math display">\[
-\tilde{\Phi} \equiv i \tau_2 \Phi^* = \begin{pmatrix} \phi^0 \\ -\phi^- \end{pmatrix}
-\]</span></p>
-<p>is a <span class="math inline">\(SU(2)\)</span> doublet.</p>
-<p>We can write the SU(2)L invariant coupling <span class="math display">\[
-L_u = -Y_u \bar{Q}_L \tilde{\Phi} u_R + \text{h.c.}
-\]</span></p></li>
-</ul>
-</div>
-</div>
-<ul>
-<li>These terms generate mass terms for quarks when <span class="math inline">\(\Phi\)</span> acquires a VEV.</li>
-</ul>
-</section></section>
+</section>
 <section>
-<section id="measurements" class="title-slide slide level1 center">
-<h1>Measurements</h1>
+<section id="higgs-unitarity-contraints" class="title-slide slide level1 center">
+<h1>Higgs unitarity contraints</h1>
 
 </section>
-<section id="slide-11-importance-of-mass-generation-without-violating-gauge-invariance" class="slide level2">
-<h2>Slide 11: Importance of Mass Generation without Violating Gauge Invariance</h2>
-<h3 id="importance-of-gauge-invariant-mass-generation">Importance of Gauge-Invariant Mass Generation</h3>
+<section id="bounds-from-precision-measurements" class="slide level2">
+<h2>Bounds from precision measurements</h2>
+<h3 id="the-mass-of-the-w">The mass of the W</h3>
+</section>
+<section id="perturbative-unitarity" class="slide level2">
+<h2>Perturbative Unitarity</h2>
+<h3 id="unitarity"><strong>Unitarity</strong></h3>
 <ul>
-<li>The Higgs mechanism ensures gauge invariance while giving mass to particles.</li>
-<li>Yukawa couplings generate fermion masses without violating gauge symmetry.</li>
-<li>This avoids flavor-changing neutral currents, ensuring the model’s consistency with observed physics.</li>
+<li>Arises from quantum mechanical scattering theory.</li>
+<li>It is based on the unitarity bound on scattering amplitudes -&gt; Conservation of probability.</li>
+</ul>
+<div class="fragment">
+<!-- -->
+<h3 id="why-perturbative"><strong>Why “Perturbative”?</strong></h3>
+<ul>
+<li>If the matrix element at whatever perturbative order does not satisfy unitarity condition, higher order contribution must cancel out remaining terms.</li>
+<li>Insights of new physics.</li>
+</ul>
+</div>
+<div class="fragment">
+<!-- -->
+<h3 id="application"><strong>Application</strong></h3>
+<ul>
+<li>Tool to understand the theoretical structure of spontanuosly broken gauge theories.</li>
+<li><strong>Specific to our case</strong>: Estimate an upper bound on the Higgs boson mass.</li>
+</ul>
+</div>
+</section>
+<section id="computation-of-the-unitarity-bound" class="slide level2">
+<h2>Computation of the unitarity bound</h2>
+<h3 id="qm-scattering-theory">QM scattering theory</h3>
+<ul>
+<li><p>Let’s start from an incoming plane wave propagating in the z direction: <span class="math display">\[
+\psi(\vec{r}) = e^{ik \cdot \vec{r}} = e^{ikr\cos\theta}
+\]</span></p></li>
+<li><p>rewritten in terms of the spherical Bessel functions and the Legendre polynomials: <span class="math display">\[
+\psi(\vec{r}) = \sum_{l=0}^{\infty}(2l +1)(i)^l j_l(kr)P_l(\cos\theta)
+\]</span></p></li>
+</ul>
+<div style="margin-top:-30px;">
+
+</div>
+<div class="fragment">
+<ul>
+<li>for <span class="math inline">\(kr&gt;&gt;l\)</span> this approximation holds: <span class="math display">\[
+\psi(\vec{r}) \simeq \frac{i}{2k}\sum_{l=0}^{\infty}(2l +1)(i)^l \left[\frac{e^{-i(kr - l\pi/2)}}{r} - \frac{e^{+i(kr - l\pi/2)}}{r} \right]P_l(\cos\theta)
+\]</span></li>
+<li>Let’s add the function <span class="math inline">\(S_l(k)\)</span> which describes the action of the scattering center. It can only modify the outgoing wave.</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<p><span class="math display">\[
+  \psi(\vec{r}) \simeq \frac{i}{2k}\sum_{l=0}^{\infty}(2l +1)(i)^l \left[\frac{e^{-i(kr - l\pi/2)}}{r} - S_l(k)\frac{e^{+i(kr - l\pi/2)}}{r} \right]P_l(\cos\theta)
+\]</span></p>
+<ul>
+<li>where <span class="math inline">\(|S_l(k) \leq 1|\)</span>. This is the source of the <strong>unitarity bound</strong>. After manipulation:</li>
+</ul>
+<span class="math display">\[
+  \psi(\vec{r}) \simeq e^{ikr\cos\theta} + \left[\sum_{l=0}^{\infty}(2l +1)\frac{S_l(k)-1}{2ik}P_l(\cos\theta)\right]\frac{e^{ikr}}{r}
+\]</span>
+<div class="fragment">
+<ul>
+<li>calling:</li>
+</ul>
+<p><span class="math display">\[
+  f(\theta) = \frac{1}{k}\sum_{l=0}^{\infty}(2l +1)a_l(k)P_l(\cos\theta)
+\]</span></p>
+<p><span class="math display">\[
+  a_l(k) = \frac{S_l(k)-1}{2i}
+\]</span></p>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><span class="math display">\[\begin{align}
+|a_l| \leq 1
+\end{align}\]</span></p>
+</div><div class="column" style="width:33%;">
+<p><span class="math display">\[\begin{align}
+|\Re{a_l}| \leq 1/2
+\end{align}\]</span></p>
+</div><div class="column" style="width:33%;">
+<p><span class="math display">\[\begin{align}
+0 \leq |\Im{a_l}| \leq 1
+\end{align}\]</span></p>
+</div>
+</div>
+<div class="fragment">
+<div>
+<figure style="text-align: center;">
+<img src="Images/unitary circle.jpeg" style="display: block; margin-left: auto; margin-right: auto; width: 70%;">
+<figcaption style="color: gray; font-size: 18px; margin-top: -15px;">
+[https://arxiv.org/abs/2207.01064]
+</figcaption>
+</figure>
+</div>
+</div>
+<div id="border-container" class="fragment">
+<div class="highlight-border1">
+
+</div>
+</div>
+<style>
+
+.highlight-border1 {
+  border: 3px solid #b491f4;
+  border-radius: 5px;
+  padding: 10px;
+  width: 180px;
+  height: 65px;
+  position: absolute;
+  top: 20px;
+  left: 430px;
+  box-sizing: border-box;
+}
+</style>
+</section>
+<section id="computation-of-the-unitarity-bound-1" class="slide level2">
+<h2>Computation of the unitarity bound</h2>
+<h3 id="translation-to-qft">Translation to QFT</h3>
+<ul>
+<li>From QM scattering theory we have <span class="math inline">\(\frac{d\sigma}{d\Omega} = |f(\theta)|^2\)</span> which we just computed: <span class="math display">\[
+|f(\theta)|^2 = |\frac{1}{k}\sum_{l=0}^{\infty}(2l +1)a_l(k)P_l(\cos\theta)|^2
+\]</span></li>
+<li>While in QFT the differential cross section for a two-to-two scattering the the CM frame is: <span class="math display">\[
+\left(\frac{d\sigma}{d\Omega}\right)_{CM} = \frac{|\mathcal{M}|^2}{64\pi^2 E^2_{CM}}
+\]</span> where the masses are take equal for simplicity. Equating the two in the case of <span class="math inline">\(E_{CM} \approx 2|\vec{p}|\)</span> we obtain: <span class="math display">\[
+\mathcal{M} = 16\pi \sum_{l=0}^{\infty}(2l +1)a_l(|\vec{p}|)P_l(\cos\theta)
+\]</span></li>
 </ul>
 </section>
-<section id="complex-number-plot" class="slide level2">
-<h2>Complex Number Plot</h2>
-<h3 id="last-slide">Last slide</h3>
+<section id="longitudinal-vector-bosons" class="slide level2">
+<h2>Longitudinal vector bosons</h2>
+<h3 id="energy-dependence">Energy dependence</h3>
+<ul>
+<li>After EWSB gauge bosons acquire a mass.</li>
+<li>Equivalent of acquiring a <strong>longitudinal polarization</strong>.</li>
+</ul>
+<div style="margin-bottom: -10px;">
+
+</div>
+<p><!-- Questo div può essere rimosso se non necessario --></p>
+<div class="fragment" style="margin-top: -20px; line-height: 1.2;">
+
+</div>
+<p style="margin-bottom: 5px;">
+For a vector with a momentum on the z-axis <span class="math inline">\(p^{\mu} = (E,0,0,p_z)\)</span>:
+</p>
+<p style="margin-bottom: 5px;">
+</p><ul>
+<li>Transverse polarization:
+<p></p></li>
+</ul>
+<div style="margin-top: -10px;">
+<span class="math display">\[\begin{array}{cc}
+  \epsilon_{T1}=(0,1,0,0) &amp; \epsilon_{T2}=(0,0,1,0)
+\end{array}\]</span>
+</div>
+<p style="margin-top: -10px; margin-bottom: 5px;">
+No energy dependence.
+</p>
+<p style="margin-top: -10px; margin-bottom: 5px;">
+</p><ul>
+<li>Longitudinal polarization:
+<p></p></li>
+</ul>
+<div style="margin-top: -10px;">
+<p><span class="math display">\[
+\epsilon_{L} = \frac{1}{m}(p_z,0,0,E)
+\]</span></p>
+</div>
+<p style="margin-top: -10px;">
+Energy dependence.
+</p>
+</section>
+<section id="longitudinal-vector-boson-scattering" class="slide level2">
+<h2>Longitudinal vector boson scattering</h2>
+<h3 id="point-diagram-w_lw-_l-rightarrow-w_lw-_l">1) 4 point diagram <span class="math inline">\(W^+_LW^-_L \rightarrow W^+_LW^-_L\)</span></h3>
+<style>
+  /* Specific styling for reducing spacing */
+  .reduce-space {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.1 !important; /* Adjust line-height for tighter spacing */
+  }
+  .reduce-space p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .reduce-space div {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .reduce-space .formula-container {
+    margin-top: -10px !important; /* Negative margin to reduce space further */
+  }
+</style>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div>
+<figure style="text-align: center;">
+<img src="Images/4point.jpeg" style="max-width: 100%; height: auto;">
+<figcaption style="color: gray; font-size: 18px; margin-top: -15px;">
+[https://arxiv.org/abs/2207.01064]
+</figcaption>
+</figure>
+</div>
+<div style="font-size: smaller;">
+<p>The vertex is: <span class="math inline">\(ig^2(2g_{\mu\sigma}g_{\nu\rho} - g_{\mu\nu}g_{\rho\sigma} - g_{\mu\rho}g_{\nu\sigma})\)</span></p>
+</div>
+</div><div class="column reduce-space" style="width:60%;">
+<p>
+The energy-momentum 4 vectors:
+</p>
+<div class="formula-container">
+<span class="math display">\[\begin{array}{cc}
+    p_+=(E,0,0,p) &amp; k_+=(E,p\sin\theta,0,p\cos\theta)\\
+    p_-=(E,0,0,-p) &amp; k_-=(E,-p\sin\theta,0,-p\cos\theta)
+  \end{array}\]</span>
+</div>
+<div class="fragment">
+<p>
+The longitudinal polarization vectors:
+</p>
+<span class="math display">\[\begin{aligned}
+    &amp;e_l(p_+)=\left(\frac{p}{M_W},0,0,\frac{E}{M_W}\right) \\
+    &amp;e_l(k_+)=\left(\frac{p}{M_W},\frac{E}{M_W}\sin\theta,0,\frac{E}{M_W}\cos\theta\right) \\
+    &amp;e_l(p_-)=\left(\frac{p}{M_W},0,0,-\frac{E}{M_W}\right) \\
+    &amp;e_l(k_-)=\left(\frac{p}{M_W},-\frac{E}{M_W}\sin\theta,0,-\frac{E}{M_W}\cos\theta\right) \\
+  \end{aligned}\]</span>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>After calculation the matrix element has a <span class="math inline">\(\frac{E^4}{M_W^4}\)</span> dependence.</li>
+<li>The high energy limit:</li>
+</ul>
+<p><span class="math display">\[
+i\mathcal{M} \approx ig^2\frac{E^4}{M_W^4}
+\]</span></p>
+<p>violates unitarity for high energies.</p>
+<ul>
+<li>But we still have to add tree level diagrams.</li>
+</ul>
+</section>
+<section id="longitudinal-vector-boson-scattering-1" class="slide level2">
+<h2>Longitudinal vector boson scattering</h2>
+<h3 id="adding-tree-level-contribution">2) Adding tree level contribution</h3>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div style="display: flex; width: 80%; height: auto; margin: auto;">
+<figure style="text-align: center;">
+<img src="Images/yZ_contribution.jpeg" style="max-width: 100%; height: 250px;">
+<figcaption style="color: gray; font-size: 18px; margin-top: -15px;">
+[https://arxiv.org/abs/2207.01064]
+</figcaption>
+</figure>
+</div>
+<div style="font-size: smaller;">
+<p>The Feynmann rule for the vertex is:</p>
+<p><span class="math display">\[
+i
+\left\{
+\begin{array}{ll}
+  e \\
+  g\cos\theta_W \\
+\end{array}
+\right\}
+[g_{\mu\nu}(-p_- + p_+)_{\alpha} + g_{\mu\alpha}(q + p_+)_{\nu} + g_{\nu\alpha}(-q - p_-)_{\mu}]
+\]</span></p>
+</div>
+</div><div class="column" style="width:40%;">
+<div>
+<p>The propagators are:</p>
+<span class="math display">\[\begin{array}{cc}
+   \frac{-i}{q^2 - M_Z^2} \left[g_{\alpha\beta} - \frac{q_{\alpha}q_{\beta}}{M_Z^2}\right]  \quad \text{and} \quad &amp; \frac{-ig_{\alpha\beta}}{q^2}\\
+\end{array}\]</span>
+<ul>
+<li class="fragment">Every of the four diagrams grows with <span class="math inline">\(\frac{E^4}{M_W^4}\)</span></li>
+<li class="fragment">But summing them together they all cancel away.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="fragment">
+<ul>
+<li>The matrix element becomes: <span class="math display">\[
+i\mathcal{M}=i\frac{g^2}{4M_W^2}\left[s+t+\mathcal{O(M_W^2)}\right]
+\]</span></li>
+</ul>
+</div>
+</div><div class="column" style="width:40%;">
+<div class="fragment">
+<ul>
+<li>There is still an <span class="math inline">\(\frac{E^2}{M_W^2}\)</span> dependece left.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="upper-bound-on-the-energy-scale" class="slide level2">
+<h2>Upper bound on the energy scale</h2>
+<h3 id="using-perturbative-unitarity">Using perturbative unitarity</h3>
+<ul>
+<li><p>We can get an estimate on the energy at which perturbative unitarity is violated.</p></li>
+<li><p>The relation obtained before on <span class="math inline">\(\mathcal{M}\)</span>:</p></li>
+</ul>
+<p><span class="math display">\[
+\mathcal{M}=16\pi\sum_{J=0}^{\infty}(2J+1)a_JP_J(\cos\theta)
+\]</span> <span class="math display">\[
+\int_{-1}^{1}P_J(\cos \theta)d(\cos \theta) \mathcal{M} = 16\pi\sum_{l=0}^{\infty}(2J+1)a_J\int_{-1}^{1}P_J(\cos \theta)P_J(\cos \theta)d(\cos \theta)
+\]</span></p>
+<ul>
+<li>The ortogonality relation of the Legendre polynomial goes:</li>
+</ul>
+<p><span class="math display">\[
+\int_{-1}^{1} d(\cos \theta) \, P_J(\cos \theta) P_{J'}(\cos \theta) = \frac{2}{2J + 1} \delta_{JJ'}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>We are able to get a definition on the Jth partial wave amplitude: <span class="math display">\[
+a_J(s) = \frac{1}{32 \pi} \int_{-1}^{1} d(\cos \theta) \, \mathcal{M}(s, \cos \theta) P_J(\cos \theta)
+\]</span> <span class="math display">\[
+a_0(s) = \frac{1}{32 \pi} \int_{-1}^{1} d(\cos \theta) \, \mathcal{M}(s, \cos \theta)
+\]</span></li>
+<li>We have the relations:
+<span class="math display">\[\begin{array}
+i\mathcal{M} \approx i\frac{g^2}{4M_W^2}\left[s+t\right] \quad \text{               } \quad &amp;  t = \frac{s}{2}(\cos\theta - 1)
+\end{array}\]</span></li>
+<li>Plugging them in and applying the bound <span class="math inline">\(|\Re{a_0}| \leq 1/2\)</span>:</li>
+</ul>
+<span class="math display">\[\begin{array}{cc}
+   a_0 \approx g^2\frac{s}{64\pi M_W^2} \leq 1/2 \quad \text{so} \quad &amp; s \leq \frac{1}{g^2}32\pi M_W^2 \approx (1200GeV)^2\\
+\end{array}\]</span>
+<ul>
+<li>The theory breaks down at the TeV scale.</li>
+</ul>
+<div id="border-container" class="fragment">
+<div class="highlight-border2">
+
+</div>
+</div>
+<style>
+
+.highlight-border2 {
+  border: 3px solid #b491f4;
+  border-radius: 5px;
+  padding: 10px;
+  width: 384px;
+  height: 65px;
+  position: absolute;
+  top: 500px;
+  left: 515px;
+  box-sizing: border-box;
+}
+</style>
+</section>
+<section id="longitudinal-vector-boson-scattering-2" class="slide level2">
+<h2>Longitudinal vector boson scattering</h2>
+<h3 id="adding-tree-level-higgs-contribution">3) Adding tree level Higgs contribution</h3>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div>
+<figure style="text-align: center;">
+<img src="Images/higgs_contribution.jpeg" style="max-width: 100%; height: 300px;">
+<figcaption style="color: gray; font-size: 18px; margin-top: -15px;">
+[https://arxiv.org/abs/2207.01064]
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<div>
+<p>The propagator is: <span class="math display">\[
+\frac{-i}{q^2 - m_h^2} \left[g_{\alpha\beta} - \frac{q_{\alpha}q_{\beta}}{m_h^2}\right]
+\]</span> The Feynmann rule for the verteces is: <span class="math display">\[
+\frac{2iM_W^2g_{\mu\nu}}{v}=i\frac{g^2v}{2}g_{\mu\nu}
+\]</span></p>
+</div>
+</div><p>We obtain a contribution of: <span class="math display">\[
+i\mathcal{M_h} = -i\frac{i}{v^2}\left(\frac{s^2}{s-m_h^2} + \frac{t^2}{t-m_h^2}\right)
+\]</span></p>
+</div>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><p>Taylor expanding for <span class="math inline">\(s,t &gt;&gt; m_h^2\)</span> we have: <span class="math display">\[
+i\mathcal{M_h} \simeq -i\frac{1}{v^2}(s+t+2m_h^2)
+\]</span></p></li>
+<li><p>Summing the contributions, we see the energy dependent term cancel: <span class="math display">\[
+i\mathcal{M} \simeq -i\frac{1}{v^2}(2m_h^2)
+\]</span></p></li>
+<li><p>Using previous relation for a_0: <span class="math display">\[
+a_0(s) = \frac{1}{32 \pi} \int_{-1}^{1} d(\cos \theta) \, \mathcal{M}(s, \cos \theta)
+\]</span> <span class="math display">\[
+a_0 \simeq -\frac{1}{16\pi v^2}(2m_h^2)
+\]</span></p></li>
+<li><p>Applying <span class="math inline">\(|\Re{a_0}| &lt; 1/2\)</span> we finally obtain an upper bound on the Higgs boson mass. <span class="math display">\[
+m_h^2 \leq 4\pi v^2 \simeq (870 GeV)^2
+\]</span></p></li>
+</ul>
+<div id="border-container" class="fragment">
+<div class="highlight-border3">
+
+</div>
+</div>
+<style>
+
+.highlight-border3 {
+  border: 3px solid #b491f4;
+  border-radius: 5px;
+  padding: 10px;
+  width: 400px;
+  height: 60px;
+  position: absolute;
+  top: 675px;
+  left: 340px;
+  box-sizing: border-box;
+}
+</style>
+</section>
+<section id="conclusions" class="slide level2">
+<h2>Conclusions</h2>
+<h3 id="sumamry">Sumamry</h3>
+<ul>
+<li>The Abelian Higgs Model</li>
+<li>Weinberg-Salam Model</li>
+<li>Fermion Masses</li>
+<li>Perturbative unitarity</li>
+<li>Upper bound Higgs mass</li>
+</ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 

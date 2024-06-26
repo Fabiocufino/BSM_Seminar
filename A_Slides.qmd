@@ -1,6 +1,6 @@
 ---
 title: Higgs mechanism & unitarity constraints
-subtitle: Perturbative unitarity for upper bound on the Higgs mass
+subtitle: Higgs mechanism and upper bound on the Higgs mass
 format: clean-revealjs
 html-math-method:
   method: mathjax
@@ -13,40 +13,30 @@ jupyter: python3
 ---
 
 
-## Toy Model: The Abelian Higgs Model
-### Mass of a gauge boson
-
-
-::: {.fragment}
-- Simplified verison of SM with $U(1)$ global symmetry:  $A_{\mu}(x) \rightarrow e^{i\theta}A_{\mu}(x)$
-:::
-
-
-::: {.fragment}
+## The Higgs Mechanism 
+### Toy Model: The Abelian Higgs Model
+- Simplified verison of SM with $U(1)$ symmetry:  $A_{\mu}(x) \rightarrow e^{i\theta}A_{\mu}(x)$
 - Consider $U(1)$ gauge theory with *single* gauge field: Photon $A_{\mu}$ 
-
 
 $$
   L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} \;\;\;\;\;\;\;\; \text{with}  \;\;\;\;\;\;\;\;  F_{\mu\nu} = \partial_\nu A_\mu - \partial_\mu A_\nu 
 $$
 
 - Local $U(1)$ gauge invariance: $A_{\mu}(x) \rightarrow A_{\mu}(x) - \partial_{\mu}\eta(x)$
-:::
 
-::: {.fragment}
-If mass term: 
+Mass term: 
 
 $$
   +\frac{1}{2} m^2 A_{\mu} A^{\mu}
 $$
 
 - Violates the local gauge invariance.
-:::
 
 
 
-## The Abelian Higgs Model
-### Extension of the Model
+
+## The Higgs Mechanism 
+### Extension of the model
 - Single complex scalar field $\phi$ that couples to the photon
 $$
   \;\;\;\;\;\;\;\; \quad\quad\quad\quad\quad \mathbfcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + |D_\mu \phi|^2 - V(\phi)
@@ -56,24 +46,23 @@ $$
 
 <hr>
 
-::: {.fragment}
 $\mathcal{L}$ is invariant under:
 
 - Global $U(1)$ rotations: $\;\; A_{\mu}(x) \rightarrow e^{i\theta}A_{\mu}(x), \;\; \phi \rightarrow e^{i\theta} \phi$
 
 - Local gauge transformations:   $\;\;  A_\mu \rightarrow A_\mu - \partial_\mu \eta(x), \;\;\;\; \phi \rightarrow e^{-ie\eta(x)} \phi$
-:::
+
 
 
 ## The scalar potential $V(\phi)$
 ### Spontaneus Symmetry Breaking
 
-The potential has two different forms:
+The potentfial has two diffenet forms:
 
 
 :::: {.columns}
 
-::: {.column width="50%" .fragment}
+::: {.column width="50%"}
 
 <div style="height: 35px;"></div>
 
@@ -84,7 +73,7 @@ The potential has two different forms:
 
 ::: {.column width="15%"}
 :::
-::: {.column width="35%" .fragment}
+::: {.column width="35%"}
 <div style="margin-top: -80px;"></div>
 ![](Images/higgs_1.png){width="250"}
 :::
@@ -99,7 +88,7 @@ The potential has two different forms:
 
 :::: {.columns}
 
-::: {.column width="50%" .fragment}
+::: {.column width="50%"}
 
 
 
@@ -113,7 +102,7 @@ The potential has two different forms:
 
 ::: {.column width="15%"}
 :::
-::: {.column width="35%" .fragment}
+::: {.column width="35%"}
 <div style="margin-top: -20px;"></div>
 ![](Images/higgs_2.png){width="250"}
 
@@ -124,20 +113,17 @@ The potential has two different forms:
 
 
 
-## Consequences of SSB in the Abelian Model {auto-animate=true}
+## Consequences of SB in the Abelian Model {auto-animate=true}
 ### Consequences of Symmetry Breaking
 
-::: {.fragment}
+- *Perturbation theroy*: It is convenient to rewrite $\phi$ 
 
-- *Perturbation theroy*: It is convenient to parametrize $\phi$ 
-  $$   
-  \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \phi \equiv \frac{1}{\sqrt{2}} e^{i \frac{\chi(x)}{v}} \left( v + h(x) \right)
-  $$ 
-  - $\chi(x), h(x)$: scalar fields
+<div style="font-size:0.85em; text-align:center; margin-bottom: 10px;">
+$$ 
+  \phi \equiv \frac{1}{\sqrt{2}} e^{i \frac{\chi(x)}{v}} \left( v + h(x) \right)
+$$
 
-::: 
-
-::: {.fragment}
+</div>
 
 Substitute $\phi$ into $\mathcal{L}$:
 
@@ -154,12 +140,9 @@ $$
   \mathcal{L} =  -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} + \left( \frac{v + h}{\sqrt{2}} \right)^2 \left[ -i \frac{\partial_\mu \chi}{v} + \frac{\partial_\mu h}{v + h} - ie A_\mu \right] \left[ i \frac{\partial_\mu \chi}{v} + \frac{\partial_\mu h}{v + h} + ie A_\mu \right] - \left( \frac{\mu^4}{\lambda} + \mu^2 h^2 + \frac{1}{2} \sqrt{\lambda} \mu h^3 + \frac{1}{16} \lambda h^4 \right)
 $$
 
-
 </div>
 
-::: 
-
-## Consequences of SSB in the Abelian Model {auto-animate=true}
+## Consequences of SB in the Abelian Model {auto-animate=true}
 ### Consequences of Symmetry Breaking
 
 <div style="height: 25px;"></div>
@@ -175,25 +158,24 @@ $$
 
 <div style="height: 35px;"></div>
 
-
 :::: {.columns}
-::: {.column width="45%" .fragment}
+::: {.column width="45%"}
 <div style="font-size: smaller;">
 - Terms involving only $A_\mu$:
 </div>
 <div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
 $$
-  \mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} + \frac{1}{2} e^2 v^2 A_\mu^2 + \cdots
+  \mathcal{L} = -\frac{1}{4} F_{\mu\nu}^2 + \frac{1}{2} e^2 v^2 A_\mu^2 + \cdots
 $$
 </div>
 
 :::
 ::: {.column width="1%"}
 :::
-::: {.column width="54%" .fragment}
+::: {.column width="54%"}
 <div style="height: 65px;"></div>
 <div style="font-size: smaller;">
-[Gauge field $A_\mu$ acquires a mass]{.fg}: $\;\; m_A^2 = e^2v^2$
+[Gauge field $A_\mu$ acquires a mass]{.fg}: $\;\; m_A = ev$
 </div>
 
 :::
@@ -204,7 +186,7 @@ $$
 <div style="height: 35px;"></div>
 
 :::: {.columns}
-::: {.column width="45%" .fragment}
+::: {.column width="45%"}
 <div style="font-size: smaller;">
 - Terms in the potential with $h_\mu$:
 </div>
@@ -217,7 +199,7 @@ $$
 :::
 ::: {.column width="1%"}
 :::
-::: {.column width="54%" .fragment}
+::: {.column width="54%"}
 <div style="height: 65px;"></div>
 <div style="font-size: smaller;">
 The Higgs field $h$ has a mass: $\;\; m_h^2 = -2\mu^2$
@@ -228,16 +210,13 @@ The Higgs field $h$ has a mass: $\;\; m_h^2 = -2\mu^2$
 
 <div style="height: 35px;"></div>
 
-:::{.fragment}
 <div style="font-size: smaller;">
-- Kinetic term for the $\chi(x)$ scalar field  $\;\; \Longrightarrow \;\;$  The Goldstone boson $\chi(x)$
+- The Goldstone boson $\chi(x) \;\; \Longrightarrow \;\;$  massles scalar field
 </div>
-:::
 
 ## Lagrangian spectrum
 ### Decoupling limit & Unitary gauge
 
-:::{.fragment}
 - Simplify things by decoupling $\chi(x)$ through the limit $\mu, \lambda → \infty$ with $v$ fixed
 
 <div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
@@ -246,76 +225,49 @@ $$
 $$
 
 </div>
-:::
-
 <div style="margin-top: -20px;"></div>
 
-:::{.fragment}
 - $\mathcal{L}$ content:
   - Gauge boson mass term
   - Kinetic term for $\chi(x)$
   - Kinetic mixing term $A_\mu \partial_\mu \chi \; \Longrightarrow$  removed through gauge-fixing
 
 <div style="height: 35px;"></div>
-:::
 
-
-
-:::: {.columns}
-::: {.column width="45%" .fragment}
 - **Unitary gauge**: 
 <div style="font-size:0.9em; text-align:center; margin-bottom: 20px;">
 <div style="margin-top: -20px;"></div>
-\begin{align*}
-  A_\mu \rightarrow A_\mu' &= A_\mu -  \frac{1}{e v} \partial_\mu \chi \\
-  \chi(x) &= 0
-\end{align*}
+$$
+  A_\mu \rightarrow A_\mu' = A_\mu -  \frac{1}{e v} \partial_\mu \chi
+$$ 
 </div>
 
-
-:::
-::: {.column width="1%"}
-:::
-::: {.column width="54%" .fragment}
-Proca Lagrangian:
-
-<div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
-$$
-  \mathcal{L} = -\frac{1}{4} F_{\mu\nu}F^{\mu\nu} + \frac{1}{2} m_A^2 A_\mu A^\mu
-$$
-
-</div>
-
-:::
-::::
+  - Goldstone boson has been 'eaten' to give the photon mass. 
 
 
 
-## Intermezzo: *nothing is broken*
+
+## Intermezzo 
 ### Hidden Symmetry
 
-:::{.fragment}
 - The VEV  breaks the global $U(1)$ symmetry: $\;\;\;\; \phi(x) \rightarrow e^{i\theta} \phi(x)$
 - Parametrization <div style="margin-top: -30px;"></div> <div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">  $$ 
   \phi \equiv \frac{1}{\sqrt{2}} e^{i \frac{\chi(x)}{v}} \left( v + h(x) \right)
 $$
 </div>
-:::
-
-:::{.fragment}
 - The symmetry is not broken: $\chi(x) \rightarrow \chi(x) + v \theta \;$ and $\; h(x) \rightarrow h(x)$
-:::
 
 
-::::{.columns .fragment}
+
+::::{.columns}
 
 :::{.column width="40%"}
 
-<div style="height: 15px;"></div>
+<div style="height: 45px;"></div>
 Consequence:
 
 - The shift forbids a mass term for $\chi(x)$
-- *Graphical interpretation*: move around the flat direction of $V(\phi)$
+- Movement around the flat direction of the potential.
 
 :::
 
@@ -380,35 +332,32 @@ Consequence:
   Plotly.newPlot('higgs-plot', data, layout);
 </script>
 
+
 :::
+
 ::::
 
 
 
 ## Introduction to the Weinberg-Salam Model
 ### Weinberg-Salam Model
-
-:::{.fragment}
 - Extends the Abelian Higgs model to an $SU(2)_L×U(1)_Y$ gauge theory.
-- Introduces three $SU(2)_L$ gauge bosons $W_\mu^I$ $(I = 1, 2, 3)$ and one $U(1)_Y$ gauge boson $B_\mu$
-:::
-
-:::{.fragment}
-- The kinetic energy terms:
-
-
+- Introduces three $SU(2)_L$ gauge bosons $W_\mu^I$ $(I = 1, 2, 3)$ and one $U(1)_Y$ gauge boson $B_\mu$.
+- The kinetic enerigy terms:
   $$
-  \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad L = -\frac{1}{4}W^I_{\mu\nu}W^{I\mu\nu} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu} 
+  L = -\frac{1}{4}W^I_{\mu\nu}W^{I\mu\nu} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu} 
   $$
   - $W^I_{\mu\nu} = \partial_\nu W^I_\mu - \partial_\mu W^I_\nu + g \epsilon^{IJK} W^J_\mu W^K_\nu$
   - $B_{\mu\nu} = \partial_\nu B_\mu - \partial_\mu B_\nu$
-:::
 
+
+
+- $SU(2)_L$ and $U(1)_Y$ coupling constants are $g$ and $g'$
 
 ## Scalar Potential and VEV in Weinberg-Salam Model
 ### Scalar Potential and VEV
 
-- Coupled to the gauge fields the complex scalar $SU(2)$ doublet $\Phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}$
+- Coupled to the gause fields the complex scalar $SU(2)$ doublet $\Phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}$
 
 - The scalar potential is similar to the Abelian model:
   $$
@@ -428,7 +377,6 @@ $$
 ## Scalar contribution to the Lagrangian
 ### Scalar contribution
 
-:::{.incremental}
 - Scalar Contribution to the Lagrangian: $\;\;\; \mathcal{L}_s = (D^\mu \Phi)^\dagger (D_\mu \Phi) - V(\Phi)$
 
 - Covariant Derivative:
@@ -446,20 +394,17 @@ $$
    </div>
    - no Goldstone bosons
    - Higgs field remains with mass
-:::
 
-:::{.fragment}
 <div style="font-size:0.9em; text-align:center; margin-bottom: 20px;">
 $$
     M^2 \sim \frac{1}{2} (0, v) \left( \frac{1}{2} g \tau \cdot W_\mu + \frac{1}{2} g' B_\mu \right)^2 \begin{pmatrix} 0 \\ v \end{pmatrix}
 $$
 </div>
-:::
 
 ## Weak Mixing Angle and Massless Photon
 ### Gauge Boson Masses
 
-:::{.fragment}
+
 - The physical gauge fields are $W^\pm$, $Z$ and $\gamma$
 
 <div style="font-size:0.85em; text-align:center; margin-top: -20px;">
@@ -469,19 +414,14 @@ $$
   A^\mu &= \frac{g B_\mu + g' W^3_\mu}{\sqrt{g^2 + g'^2}} \equiv \cos \theta_W B_\mu + \sin \theta_W W^3_\mu.
 \end{align*}
 </div>
-:::
-:::{.fragment}
 - The weak mixing angle $\theta_W$ is defined by $\sin \theta_W = \frac{g'}{\sqrt{g^2 + g'^2}}$
-:::
 
-:::{.fragment .fade-in}
 - The masses of the gauge bosons are:
 
-<div style="margin-top: -20px;"></div>
 $$
   M_W^2 = \frac{1}{4}g^2v^2 \quad \;\;\; M_Z^2 = \frac{1}{4}(g^2 + g'^2)v^2 \quad \;\;\; M_\gamma^2 = 0
 $$
-:::
+
 
 
 ## Higgs and Fermions
@@ -494,23 +434,16 @@ $$
     $$
   - Does not respect $SU(2)_L$ $\times$ $U(1)_Y$ gauge symmetry.
 
-<div style="margin-top: 40px;"></div>
 
-
-:::{.fragment}
 - $SU(2)$ local Gauge Transformation:
-  - Field $\phi(x)$ is $SU(2)$ doublet: $\;\; \phi' = \left( I + ig_W \epsilon(x) \cdot \mathbf{T} \right)\phi$
+  - Higgs mechanism $\phi(x)$ ($SU(2)$ doublet): $\;\; \phi' = \left( I + ig_W \epsilon(x) \cdot \mathbf{T} \right)\phi$
   - $LH$ doublet of fermion fields: $\;\;  \bar{L}' = \bar{L}\left(I - ig_W \epsilon(x) \cdot \mathbf{T} \right)$
 
-:::
-
-:::{.fragment}
-- Combination $\bar{L} \phi$ is invariant under $SU(2)_L$ gauge transformations.
-:::
 
 ## Higgs and Fermions
 ### Leptons and up-type quarks masses 
 
+- Combination $\bar{L} \phi$ is invariant under $SU(2)_L$ gauge transformations.
 - Combining with a $RH$ singlet $\;\Longrightarrow \;$ $\bar{L}\phi R$ is invariant under $SU(2)_L$ and $U(1)_Y$ gauge transformations.
   - Lagrangian term: $-g_f(\bar{L} \phi R + \bar{R} \phi^\dagger L)$
 
@@ -538,40 +471,32 @@ $$
     g_e = \sqrt{2} \frac{m_e}{v}
     $$
 
-<div style="margin-top: -30px;"></div>
-
-:::{.fragment}
 **Problem**: Non-zero VEV is in the lower (neutral) component of the Higgs doublet.
 
 - $(\bar{L}\phi R + \bar{R}\phi^{\dagger}L)$ generate $m$ only for lower component of an $SU(2)_L$ doublet.
-:::
-
-:::{.fragment}
-*Solution*: constructing the conjugate doublet $\;\; \phi_c \equiv i \tau_2 \phi^* = \begin{pmatrix} \phi^0 \\ -\phi^- \end{pmatrix}$
-
+ 
+- Achieved by constructing the conjugate doublet $\;\; \phi_c \equiv i \tau_2 \phi^* = \begin{pmatrix} \phi^0 \\ -\phi^- \end{pmatrix}$
   - A gauge invariant mass term can be constructed from $(\bar{L}\phi_c R + \bar{R}\phi^{\dagger}_c L)$
 
 $$
    \mathcal{L}_u = -\frac{g_u v}{\sqrt{2}} (\bar{u}_L u_R + \bar{u}_R u_L) - \frac{g_u}{\sqrt{2}} h (\bar{u}_L u_R + \bar{u}_R u_L)
 $$
-:::
 
 # Higgs unitarity contraints
 
-
 ## Perturbative Unitarity
 
-### Unitarity
-- It arises from the conservation of probability in quantum mechanics.
-- Unitarity bound on scattering amplitudes.
+### **Unitarity**
+- Arises from quantum mechanical scattering theory.
+- It is based on the unitarity bound on scattering amplitudes -> Conservation of probability.
 
 <div class="fragment">
-### Why "Perturbative"?
+### **Why "Perturbative"?**
 - If the matrix element at whatever perturbative order does not satisfy unitarity condition, higher order contribution must cancel out remaining terms.
 - Insights of new physics.
 </div>
 <div class="fragment">
-### Application
+### **Application**
 - Tool to understand the theoretical structure of spontanuosly broken gauge theories.
 - **Specific to our case**: Estimate an upper bound on the Higgs boson mass.
 </div>
@@ -586,21 +511,15 @@ $$
   \sigma_{tot}(AA \rightarrow AA) = \frac{1}{32\pi E_{CM}^2}\int d\cos\theta|\mathcal{M}|^2
 $$
 - The expansion of the matrix element in terms of partial wave amplitudes is:
-
-<div style="margin-top: -40px;"></div>
 $$
   \mathcal{M} = 16\pi \sum_{l=0}^{\infty}(2l +1)a_l(|\vec{p}|)P_l(\cos\theta)
 $$
-
-<div style="margin-top: -40px;"></div>
 - We obtain the result:
 $$
-\quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad  \sigma_{tot} = \frac{16\pi}{E^2_{CM}} \sum_{l=0}^{\infty}(2l +1)|a_l|^2 
+\sigma_{tot} = \frac{16\pi}{E^2_{CM}} \sum_{l=0}^{\infty}(2l +1)|a_l|^2 
 $$
 
 - The optical theorem states:
-
-<div style="margin-top: -40px;"></div>
 $$
 \Im{\mathcal{M}(A \rightarrow A)} = 2E_{CM}|\vec{p}| \sum_{X} \sigma(A \rightarrow X) \geq 2E_{CM}|\vec{p}| \sigma(A \rightarrow A)
 $$
@@ -611,7 +530,7 @@ $$
 $$
 \sum_{l=0}^{\infty}(2l + 1)\Im{a_l}  = \frac{2|\vec{p}|}{E_{CM}} \sum_{l=0}^{\infty}(2l + 1)|a_l|^2 
 $$
-- Since $\Im{a_l} \leq |a_l|$ in the high energy limit we have $\Im{a_l} = |a_l|$:
+- Since $\Im{a_l} \leq |a_l|$ in the high energy limit we have $\Im{a_l} \leq |a_l|$:
 
 ::: {.columns}
 ::: {.column width="33%"}
@@ -1022,7 +941,7 @@ $$
 
 
 ## Conclusions
-### Summary
+### Sumamry
 
 - The Abelian Higgs Model
 - Weinberg-Salam Model

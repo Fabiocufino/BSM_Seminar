@@ -18,20 +18,21 @@ jupyter: python3
 
 
 ::: {.fragment}
-- Simplified verison of SM with $U(1)$ global symmetry:  $A_{\mu}(x) \rightarrow e^{i\theta}A_{\mu}(x)$
+- Simplified verison of SM: $U(1)$ gauge theory with a *single* gauge field, the photon $A_{\mu}$ 
 :::
 
 
 ::: {.fragment}
-- Consider $U(1)$ gauge theory with *single* gauge field: Photon $A_{\mu}$ 
-
-
 $$
-  L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} \;\;\;\;\;\;\;\; \text{with}  \;\;\;\;\;\;\;\;  F_{\mu\nu} = \partial_\nu A_\mu - \partial_\mu A_\nu 
+  \mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} \;\;\;\;\;\;\;\; \text{with}  \;\;\;\;\;\;\;\;  F_{\mu\nu} = \partial_\nu A_\mu - \partial_\mu A_\nu 
 $$
 
-- Local $U(1)$ gauge invariance: $A_{\mu}(x) \rightarrow A_{\mu}(x) - \partial_{\mu}\eta(x)$
+- Local $U(1)$ gauge invariance requires $\mathcal{L}$ to be invariant under: 
+$$
+\quad \quad \quad A_{\mu}(x) \rightarrow A_{\mu}(x) - \partial_{\mu}\eta(x)$$
 :::
+
+<div style="margin-top: -30px;"></div>
 
 ::: {.fragment}
 If mass term: 
@@ -42,6 +43,7 @@ $$
 
 - Violates the local gauge invariance.
 :::
+
 
 
 
@@ -206,7 +208,7 @@ $$
 :::: {.columns}
 ::: {.column width="45%" .fragment}
 <div style="font-size: smaller;">
-- Terms in the potential with $h_\mu$:
+- Terms for the potential $V(\phi)$:
 </div>
 <div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
 $$
@@ -487,12 +489,14 @@ $$
 ## Higgs and Fermions
 ### Lepton masses 
 
+:::{.fragment}
 - Different transformation for $LH$ ($SU(2)$ doublets) and $RH$ ($SU(2)$ singlets) chiral states.
 - Fermion mass term in Lagrangian:
     $$
     -m\bar{\psi}\psi = -m \left( \bar{\psi}_R \psi_L + \bar{\psi}_L \psi_R \right)
     $$
   - Does not respect $SU(2)_L$ $\times$ $U(1)_Y$ gauge symmetry.
+:::
 
 <div style="margin-top: 40px;"></div>
 
@@ -509,9 +513,9 @@ $$
 :::
 
 ## Higgs and Fermions
-### Leptons and up-type quarks masses 
+### Leptons and down-type quarks masses 
 
-- Combining with a $RH$ singlet $\;\Longrightarrow \;$ $\bar{L}\phi R$ is invariant under $SU(2)_L$ and $U(1)_Y$ gauge transformations.
+- Combining with a $RH$ singlet $\;\Longrightarrow \;$ $\bar{L}\phi R$ is invariant under $SU(2)_L$ **and** $U(1)_Y$ gauge transformations.
   - Lagrangian term: $-g_f(\bar{L} \phi R + \bar{R} \phi^\dagger L)$
 
 **Electron Example:**
@@ -531,7 +535,7 @@ $$
 
 
 ## Higgs and Fermions
-### down-type quarks masses 
+### up-type quarks masses 
 
 - Yukawa coupling $g_e$ is chosen to match observed electron mass:
     $$
@@ -551,9 +555,6 @@ $$
 
   - A gauge invariant mass term can be constructed from $(\bar{L}\phi_c R + \bar{R}\phi^{\dagger}_c L)$
 
-$$
-   \mathcal{L}_u = -\frac{g_u v}{\sqrt{2}} (\bar{u}_L u_R + \bar{u}_R u_L) - \frac{g_u}{\sqrt{2}} h (\bar{u}_L u_R + \bar{u}_R u_L)
-$$
 :::
 
 # Higgs unitarity contraints

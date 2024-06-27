@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="Slides_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Slides_files/libs/quarto-html/tabby.min.js"></script>
-<script src="Slides_files/libs/quarto-html/popper.min.js"></script>
-<script src="Slides_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="Slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="Slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="Slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.554">
 
   <meta name="author" content="Fabio Cufino - Angelo Arisi">
@@ -16,8 +16,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="Slides_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="Slides_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -31,11 +31,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="Slides_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="Slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="Slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="Slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="Slides_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -348,19 +348,20 @@ Fabio Cufino - Angelo Arisi
 <h3 id="mass-of-a-gauge-boson">Mass of a gauge boson</h3>
 <div class="fragment">
 <ul>
-<li>Simplified verison of SM with <span class="math inline">\(U(1)\)</span> global symmetry: <span class="math inline">\(A_{\mu}(x) \rightarrow e^{i\theta}A_{\mu}(x)\)</span></li>
+<li>Simplified verison of SM: <span class="math inline">\(U(1)\)</span> gauge theory with a <em>single</em> gauge field, the photon <span class="math inline">\(A_{\mu}\)</span></li>
 </ul>
 </div>
 <div class="fragment">
-<ul>
-<li>Consider <span class="math inline">\(U(1)\)</span> gauge theory with <em>single</em> gauge field: Photon <span class="math inline">\(A_{\mu}\)</span></li>
-</ul>
 <p><span class="math display">\[
-  L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} \;\;\;\;\;\;\;\; \text{with}  \;\;\;\;\;\;\;\;  F_{\mu\nu} = \partial_\nu A_\mu - \partial_\mu A_\nu
+  \mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} \;\;\;\;\;\;\;\; \text{with}  \;\;\;\;\;\;\;\;  F_{\mu\nu} = \partial_\nu A_\mu - \partial_\mu A_\nu
 \]</span></p>
 <ul>
-<li>Local <span class="math inline">\(U(1)\)</span> gauge invariance: <span class="math inline">\(A_{\mu}(x) \rightarrow A_{\mu}(x) - \partial_{\mu}\eta(x)\)</span></li>
+<li>Local <span class="math inline">\(U(1)\)</span> gauge invariance requires <span class="math inline">\(\mathcal{L}\)</span> to be invariant under: <span class="math display">\[
+\quad \quad \quad A_{\mu}(x) \rightarrow A_{\mu}(x) - \partial_{\mu}\eta(x)\]</span></li>
 </ul>
+</div>
+<div style="margin-top: -30px;">
+
 </div>
 <div class="fragment">
 <p>If mass term:</p>
@@ -517,7 +518,7 @@ Fabio Cufino - Angelo Arisi
 <div class="column fragment" style="width:45%;">
 <div style="font-size: smaller;">
 <ul>
-<li>Terms in the potential with <span class="math inline">\(h_\mu\)</span>:</li>
+<li>Terms for the potential <span class="math inline">\(V(\phi)\)</span>:</li>
 </ul>
 </div>
 <div style="font-size:0.8em; text-align:center; margin-bottom: 20px;">
@@ -804,6 +805,7 @@ D_\mu = \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} B_\mu Y
 <section id="higgs-and-fermions" class="slide level2">
 <h2>Higgs and Fermions</h2>
 <h3 id="lepton-masses">Lepton masses</h3>
+<div class="fragment">
 <ul>
 <li>Different transformation for <span class="math inline">\(LH\)</span> (<span class="math inline">\(SU(2)\)</span> doublets) and <span class="math inline">\(RH\)</span> (<span class="math inline">\(SU(2)\)</span> singlets) chiral states.</li>
 <li>Fermion mass term in Lagrangian: <span class="math display">\[
@@ -813,6 +815,7 @@ D_\mu = \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} B_\mu Y
 <li>Does not respect <span class="math inline">\(SU(2)_L\)</span> <span class="math inline">\(\times\)</span> <span class="math inline">\(U(1)_Y\)</span> gauge symmetry.</li>
 </ul></li>
 </ul>
+</div>
 <div style="margin-top: 40px;">
 
 </div>
@@ -833,9 +836,9 @@ D_\mu = \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} B_\mu Y
 </section>
 <section id="higgs-and-fermions-1" class="slide level2">
 <h2>Higgs and Fermions</h2>
-<h3 id="leptons-and-up-type-quarks-masses">Leptons and up-type quarks masses</h3>
+<h3 id="leptons-and-down-type-quarks-masses">Leptons and down-type quarks masses</h3>
 <ul>
-<li>Combining with a <span class="math inline">\(RH\)</span> singlet <span class="math inline">\(\;\Longrightarrow \;\)</span> <span class="math inline">\(\bar{L}\phi R\)</span> is invariant under <span class="math inline">\(SU(2)_L\)</span> and <span class="math inline">\(U(1)_Y\)</span> gauge transformations.
+<li>Combining with a <span class="math inline">\(RH\)</span> singlet <span class="math inline">\(\;\Longrightarrow \;\)</span> <span class="math inline">\(\bar{L}\phi R\)</span> is invariant under <span class="math inline">\(SU(2)_L\)</span> <strong>and</strong> <span class="math inline">\(U(1)_Y\)</span> gauge transformations.
 <ul>
 <li>Lagrangian term: <span class="math inline">\(-g_f(\bar{L} \phi R + \bar{R} \phi^\dagger L)\)</span></li>
 </ul></li>
@@ -853,7 +856,7 @@ D_\mu = \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} B_\mu Y
 </section>
 <section id="higgs-and-fermions-2" class="slide level2">
 <h2>Higgs and Fermions</h2>
-<h3 id="down-type-quarks-masses">down-type quarks masses</h3>
+<h3 id="up-type-quarks-masses">up-type quarks masses</h3>
 <ul>
 <li>Yukawa coupling <span class="math inline">\(g_e\)</span> is chosen to match observed electron mass: <span class="math display">\[
   g_e = \sqrt{2} \frac{m_e}{v}
@@ -873,9 +876,6 @@ D_\mu = \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} B_\mu Y
 <ul>
 <li>A gauge invariant mass term can be constructed from <span class="math inline">\((\bar{L}\phi_c R + \bar{R}\phi^{\dagger}_c L)\)</span></li>
 </ul>
-<p><span class="math display">\[
-   \mathcal{L}_u = -\frac{g_u v}{\sqrt{2}} (\bar{u}_L u_R + \bar{u}_R u_L) - \frac{g_u}{\sqrt{2}} h (\bar{u}_L u_R + \bar{u}_R u_L)
-\]</span></p>
 </div>
 </section>
 <section>
@@ -942,7 +942,7 @@ D_\mu = \partial_\mu + i \frac{g}{2} \tau \cdot W_\mu + i \frac{g'}{2} B_\mu Y
 
 <p><span class="math display">\[
 \sum_{l=0}^{\infty}(2l + 1)\Im{a_l}  = \frac{2|\vec{p}|}{E_{CM}} \sum_{l=0}^{\infty}(2l + 1)|a_l|^2
-\]</span> - Since <span class="math inline">\(\Im{a_l} \leq |a_l|\)</span> in the high energy limit we have <span class="math inline">\(\Im{a_l} = |a_l|\)</span>:</p>
+\]</span> - Since <span class="math inline">\(\Im{a_l} \leq |a_l|\)</span> in the high energy limit we have <span class="math inline">\(\Im{a_l} =Fina |a_l|\)</span>:</p>
 <div class="columns">
 <div class="column" style="width:33%;">
 <p><span class="math display">\[\begin{align}
@@ -1359,19 +1359,19 @@ m_h^2 \leq 4\pi v^2 \simeq (870 GeV)^2
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="Slides_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="Slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="Slides_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="Slides_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="Slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="Slides_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="Slides_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="Slides_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="Slides_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="Slides_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

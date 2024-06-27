@@ -611,7 +611,7 @@ $$
 $$
 \sum_{l=0}^{\infty}(2l + 1)\Im{a_l}  = \frac{2|\vec{p}|}{E_{CM}} \sum_{l=0}^{\infty}(2l + 1)|a_l|^2 
 $$
-- Since $\Im{a_l} \leq |a_l|$ in the high energy limit we have $\Im{a_l} = |a_l|$:
+- Since $\Im{a_l} \leq |a_l|$ in the high energy limit we have $\Im{a_l} =Fina |a_l|$:
 
 ::: {.columns}
 ::: {.column width="33%"}
